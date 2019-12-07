@@ -1,0 +1,7 @@
+#!/bin/bash
+
+jack_control start
+wait 2
+pulseaudio --start
+wait 5
+carla ~/.scripts/carla/mainConfig.carxp &
