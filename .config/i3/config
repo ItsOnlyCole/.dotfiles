@@ -1,0 +1,251 @@
+# i3 Rice: WindStrider
+# Created by ItsOnlyCole
+
+#################################
+#       Table of Contents       #
+#                               #
+#  XXX-XXX: System Configs      #
+#  XXX-XXX: Audio Config        #
+#  XXX-XXX: Autostart Apps      #
+#  XXX-XXX: App Shortcuts       #
+#  XXX-XXX: Workspaces          #
+#  XXX-XXX: Application         #
+#            Restrictions       #
+#                               #
+#################################
+
+##################
+# System Configs #
+##################
+
+# Set mod key (Mod1=<Alt>, Mod4=<Super>)
+set $mod Mod4
+
+# Borders
+new_window pixel 1
+new_float normal
+hide_edge_borders none
+
+# Use Mouse+$mod to drag floating windows
+floating_modifier $mod
+
+# Kill focused window
+bindsym $mod+Shift+q kill
+
+# Change focus (JKL;)
+bindsym $mod+j focus left
+bindsym $mod+k focus down
+bindsym $mod+l focus up
+bindsym $mod+semicolon focus right
+
+# Change focus (cursor keys)
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+
+# Move focused window (JKL;)
+bindsym $mod+Shift+j move left
+bindsym $mod+Shift+k move down
+bindsym $mod+Shift+l move up
+bindsym $mod+Shift+semicolon move right
+
+# Move focused window (cursor keys)
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# Split orientation
+bindsym $mod+h split h;exec notify-send 'tile horizontally'
+bindsym $mod+v split v;exec notify-send 'tile vertically'
+bindsym $mod+q split toggle
+
+# Toggle fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+
+# Toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
+
+# Change focus between tiling / floating windows
+bindsym $mod+space focus mode_toggle
+
+#navigate workspaces next / previous
+bindsym $mod+Ctrl+Right workspace next
+bindsym $mod+Ctrl+Left workspace prev
+
+# Restarts i3 (Use to reload config)
+bindsym $mod+Shift+r restart
+
+# Lock screen
+#bindsym $mod+Delete exec --no-startup-id i3exit lock, mode "default"
+
+# exit i3 (logs you out of your X session)
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you rea>
+
+# Set inner/outer gaps
+gaps inner 10
+gaps outer 15
+
+# switch to workspace with urgent window automatically
+for_window [urgent=latest] focus
+
+# Resize window
+bindsym $mod+r mode "resize"
+mode "resize" {
+     # Left/J will shrink window's width
+     # Right/; will grow window's width
+     # Down/K will expand window's height
+     # Up/L will shrink window's height
+     bindsym j resize shrink width 5 px or 5 ppt
+     bindsym k resize grow height 5 px or 5 ppt
+     bindsym l resize shrink height 5 px or 5 ppt
+     bindsym semicolon resize grow width 5 px or 5 ppt
+     # Same bindings but with arrow keys
+     bindsym Left resize shrink width 5 px or 5 ppt
+     bindsym Down resize grow height 5 px or 5 ppt
+     bindsym Up resize shrink height 5 px or 5 ppt
+     bindsym Right resize grow width 5 px or 5 ppt
+
+     # Exit resize mode: Enter or Escape
+     bindsym Return mode "default"
+     bindsym Escape mode "default"
+}
+
+################
+# Sound Config #
+################
+
+#exec bash ~/.scripts/configureAudio.sh
+#exec --no-startup-id jack_control start
+exec --no-startup-id pulseaudio --start
+#exec --no-startup-id pa-applet
+#exec --no-startup-id carla ~/.scripts/carla/CARLACONFIG &
+
+##################
+# Autostart Apps #
+##################
+
+#exec bash ~/.scripts/startCompton.sh
+#exec --no-startup-id gpmdp
+#exec --no-startup-id nm-applet
+#exec --no-startup-id pamac-tray
+#exec_always --no-startup-id ff-theme-util
+#exec_always --no-startup-id setcursor
+# Display Settings
+#exec bash ~/.scripts/configureMonitors.sh
+# Sets Desktop Background
+#exec feh --bg-fill ~/.wallpapers/zeroTwo.png
+# Starts Polybar
+#exec_always bash ~/.config/polybar/launch.sh
+
+#################
+# App Shortcuts #
+#################
+
+bindsym $mod+Return exec xfce4-terminal
+bindsym $mod+d exec --no-startup-id rofi -show drun -theme Arc-Dark
+# bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send 'brightness up'"
+# bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
+bindsym $mod+Shift+Print exec --no-startup-id i3-scrot -w
+bindsym $mod+Print --release exec --no-startup-id i3-scrot -s
+bindsym $mod+Ctrl+q --release exec --no-startup-id xkill
+
+# Scripts
+#bindsym $mod+Shift+Home exec --no-startup-id bash ~/.scripts/loadHomeWS.sh
+#bindsym $mod+Control+m exec --no-startup-id bash ~/.scripts/loadEmacsStreamWS.sh
+#bindsym $mod+Control+n exec --no-startup-id bash ~/.scripts/loadBrowserStreamWS.sh
+#bindsym $mod+Control+b exec --no-startup-id bash ~/.scripts/loadAtomStreamWS.sh
+
+##############
+# Workspaces #
+##############
+
+# Workspace Names
+set $wsHome    ^`^u
+# f015
+set $wsSteam    ^f
+# f1b6
+set $wsMedia    ^`^a
+# f001
+set $wsCarla    ^b
+# f0a0
+set $wsStreamEmacs    ^d
+# f121
+set $wsStreamBrowser    ^w
+# f5fc
+set $wsStreamAtom    ^w^r
+# f5d2
+set $ws1 1
+set $ws2 2
+set $ws3 3
+set $ws4 4
+set $ws5 5
+set $ws6 6
+set $ws7 7
+set $ws8 8
+
+# Assign certain Workspaces to specific Montiors
+workspace $wsHome output DP-0
+workspace $ws1 output HDMI-1
+workspace $wsMedia output DP-2
+workspace $wsSteam output DP-0
+workspace $wsCarla output DVI-D-0
+workspace $wsStreamEmacs output DP-0
+workspace $wsStreamBrowser output DP-0
+workspace $wsStreamAtom output DP-0
+
+# Switch to workspace
+bindsym $mod+1 workspace $ws1
+bindsym $mod+2 workspace $ws2
+bindsym $mod+3 workspace $ws3
+bindsym $mod+4 workspace $ws4
+bindsym $mod+5 workspace $ws5
+bindsym $mod+6 workspace $ws6
+bindsym $mod+7 workspace $ws7
+bindsym $mod+8 workspace $ws8
+bindsym $mod+u workspace $wsHome
+bindsym $mod+i workspace $wsSteam
+bindsym $mod+o workspace $wsMedia
+bindsym $mod+p workspace $wsCarla
+bindsym $mod+m workspace $wsStreamEmacs
+bindsym $mod+n workspace $wsStreamBrowser
+bindsym $mod+b workspace $wsStreamAtom
+
+# Move to workspace with focused container
+bindsym $mod+Shift+1 move container to workspace $ws1; workspace $ws1
+bindsym $mod+Shift+2 move container to workspace $ws2; workspace $ws2
+bindsym $mod+Shift+3 move container to workspace $ws3; workspace $ws3
+bindsym $mod+Shift+4 move container to workspace $ws4; workspace $ws4
+bindsym $mod+Shift+5 move container to workspace $ws5; workspace $ws5
+bindsym $mod+Shift+6 move container to workspace $ws6; workspace $ws6
+bindsym $mod+Shift+7 move container to workspace $ws7; workspace $ws7
+bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
+bindsym $mod+Shift+u move container to workspace $wsHome; workspace $wsHome
+bindsym $mod+Shift+i move container to workspace $wsSteam; workspace $wsSteam
+bindsym $mod+Shift+o move container to workspace $wsMedia; workspace $wsMedia
+bindsym $mod+Shift+p move container to workspace $wsCarla; workspace $wsCarla
+bindsym $mod+Shift+m move container to workspace $wsStreamEmacs; workspace $wsStreamEmacs
+bindsym $mod+Shift+n move container to workspace $wsStreamBrowser; workspace $wsStreamBrowser
+bindsym $mod+Shift+b move container to workspace $wsStreamAtom; workspace $wsStreamAtom
+
+#################
+# Application   #
+#  Restrictions #
+#################
+
+# Open applications on specific workspaces
+assign [class="Carla"] $wsCarla
+assign [class="Google Play Music Desktop Player"] $wsMedia
+assign [class="discord"] $wsMedia
+assign [class="Steam"] $wsSteam
+assign [class="csgo_linux64"] $wsSteam
+
+# Open specific applications in floating mode
+for_window [title="File Transfer*"] floating enable
+for_window [class="Gparted"] floating enable border normal
+for_window [class="Pamac-manager"] floating enable
+for_window [class="Pamac-updater"] floating enable
+for_window [class="Pavucontrol"] floating enable
+for_window [class="qt5ct"] floating enable sticky enable border normal
+for_window [title="sudo"] floating enable border normal
+
