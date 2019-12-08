@@ -80,7 +80,7 @@ bindsym $mod+Shift+r restart
 #bindsym $mod+Delete exec --no-startup-id i3exit lock, mode "default"
 
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you rea>
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # Set inner/outer gaps
 gaps inner 10
@@ -132,11 +132,11 @@ exec --no-startup-id pulseaudio --start
 #exec_always --no-startup-id ff-theme-util
 #exec_always --no-startup-id setcursor
 # Display Settings
-#exec bash ~/.scripts/configureMonitors.sh
+exec bash ~/.scripts/configureMonitors.sh
 # Sets Desktop Background
 #exec feh --bg-fill ~/.wallpapers/zeroTwo.png
 # Starts Polybar
-#exec_always bash ~/.config/polybar/launch.sh
+exec_always bash ~/.config/polybar/launch.sh
 
 #################
 # App Shortcuts #
@@ -234,11 +234,11 @@ bindsym $mod+Shift+b move container to workspace $wsStreamAtom; workspace $wsStr
 #################
 
 # Open applications on specific workspaces
-assign [class="Carla"] $wsCarla
-assign [class="Google Play Music Desktop Player"] $wsMedia
-assign [class="discord"] $wsMedia
-assign [class="Steam"] $wsSteam
-assign [class="csgo_linux64"] $wsSteam
+#assign [class="Carla"] $wsCarla
+#assign [class="Google Play Music Desktop Player"] $wsMedia
+#assign [class="discord"] $wsMedia
+#assign [class="Steam"] $wsSteam
+#assign [class="csgo_linux64"] $wsSteam
 
 # Open specific applications in floating mode
 for_window [title="File Transfer*"] floating enable
