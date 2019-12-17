@@ -21,13 +21,11 @@ secondary = #F3F3BA
 
 [bar/mainConfig]
 monitor = DP-0
-width = 85%
-height = 32
-offset-x = 15
-offset-y = 1%
+width = 100%
+height = 30
+offset-x = 0%
 radius = 16
 fixed-center = true
-pseudo-transparency = true
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -35,8 +33,8 @@ foreground = ${colors.foreground}
 line-size = 0
 line-color = #f00
 
-#border-size = 0
-#border-color = #00000000
+;border-size = 0
+;border-color = #00000000
 
 padding-left = 0
 padding-right = 0
@@ -57,18 +55,25 @@ modules-left = i3
 modules-center = date
 modules-right = volume powermenu
 
-;tray-position = hidden
-;tray-padding = 11
-;tray-transparent = true
-;tray-offset-y = 22
-;tray-offset-x = -0
-;tray-maxsize = 18
-;tray-detached = true
+tray-position = hidden
+tray-padding = 11
+tray-transparent = true
+tray-offset-y = 22
+tray-offset-x = -0
+tray-maxsize = 18
+tray-detached = true
 ;tray-background = #0063ff
 
+;wm-restack = bspwm
 wm-restack = i3
 
 ;override-redirect = true
+
+;scroll-up = bspwm-desknext
+;scroll-down = bspwm-deskprev
+
+;scroll-up = i3wm-wsnext
+;scroll-down = i3wm-wsprev
 
 [bar/altTime]
 monitor = DP-2
