@@ -185,14 +185,14 @@ set $ws7 7
 set $ws8 8
 
 # Assign certain Workspaces to specific Montiors
-workspace $wsHome output DP-0
+workspace $ws2 output DP-0
 workspace $ws1 output HDMI-1
-workspace $wsMedia output DP-2
-workspace $wsSteam output DP-0
-workspace $wsCarla output DVI-D-0
-workspace $wsStreamEmacs output DP-0
-workspace $wsStreamBrowser output DP-0
-workspace $wsStreamAtom output DP-0
+workspace $ws3 output DP-2
+# workspace $wsSteam output DP-0
+workspace $ws3 output DVI-D-0
+#workspace $wsStreamEmacs output DP-0
+#workspace $wsStreamBrowser output DP-0
+#workspace $wsStreamAtom output DP-0
 
 # Switch to workspace
 bindsym $mod+1 workspace $ws1
