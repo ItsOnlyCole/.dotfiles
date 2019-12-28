@@ -1,7 +1,8 @@
 ;-------------------------;
 ;     Polybar Config      ;
+;           by:           ;
+;       ItsOnlyCole       ;
 ;-------------------------;
-
 
 [colors]
 background = #cf0D0F1C
@@ -18,14 +19,13 @@ foreground-alt = #FFFFFF
 primary = #F3F3BA
 secondary = #F3F3BA
 
-
 [bar/mainConfig]
 monitor = DP-0
-width = 85%
+width = 100%
 height = 32
 offset-x = 15
 offset-y = 1%
-radius = 16
+;radius = 16
 fixed-center = true
 pseudo-transparency = true
 
@@ -35,8 +35,8 @@ foreground = ${colors.foreground}
 line-size = 0
 line-color = #f00
 
-#border-size = 0
-#border-color = #00000000
+;#border-size = 0
+;#border-color = #00000000
 
 padding-left = 0
 padding-right = 0
@@ -57,75 +57,11 @@ modules-left = i3
 modules-center = date
 modules-right = volume powermenu
 
-;tray-position = hidden
-;tray-padding = 11
-;tray-transparent = true
-;tray-offset-y = 22
-;tray-offset-x = -0
-;tray-maxsize = 18
-;tray-detached = true
-;tray-background = #0063ff
-
 wm-restack = i3
 
-;override-redirect = true
-
-[bar/altTime]
-monitor = DP-2
-width = 100%
-height = 30
-offset-x = 0%
-offset-y = 15
-radius = 0.0
-fixed-center = true
-bottom=true
-
-background = ${colors.background}
-foreground = ${colors.foreground}
-
-line-size = 0
-line-color = #f00
-
-border-size = 0
-border-color = #00000000
-
-padding-left = 0
-padding-right = 0
-
-module-margin-left = 0
-module-margin-right = 0
-
-font-0 = Misc Termsyn:size=8;1
-font-1 = FontAwesome:pizelsize=12;1
-font-3 = Font Awesome 5 Free:style=Regular:pixelsize=8;1
-font-4 = Font Awesome 5 Free:style=Solid:pixelsize=8;1
-font-5 = Font Awesome 5 Brands:pixelsize=8;1
-font-2 = sm4tik:pixelsize=10;1
-
-
-modules-center = date
-
-tray-position = hidden
-tray-padding = 11
-tray-transparent = true
-tray-offset-y = 22
-tray-offset-x = -0
-tray-maxsize = 18
-tray-detached = true
-
-wm-restack = i3
-
-[module/weather]
-type = custom/script
-interval = 60
-
-;format-background = ${colors.background-alt}
-format = <label>
-format-prefix = "    "
-format-suffix = "   "
-format-prefix-foreground = ${colors.foreground-alt}
-exec = python ~/.config/polybar/weather.py
-
+;---------------------;
+;       MODULES       ;
+;---------------------;
 [module/music]
 type = custom/script
 interval = 1
@@ -137,7 +73,6 @@ bar-width = 50%
 label = " %output% "
 
 exec = ~/.config/polybar/mpris.sh
-
 
 [module/i3]
 
@@ -207,9 +142,6 @@ label-urgent-foreground = #ffffff
 label-urgent-background = ${colors.background-alrt}
 label-urgent-padding = 4
 
-
-
-
 [module/wireless-network]
 type = internal/network
 interface = wlp2s0
@@ -252,12 +184,11 @@ format-disconnected =
 ;label-disconnected = %ifname% disconnected
 ;label-disconnected-foreground = ${colors.foreground-alt}
 
-
 [module/date]
 type = internal/date
 interval = 5
 
-date = 
+date =
 date-alt = " %Y-%m-%d"
 
 time = "   %a %b %d     %I:%M %p  "
@@ -312,7 +243,6 @@ format-volume-prefix = " "
 label-muted = "   mute   "
 
 ;label-muted = "          "
-
 ; Only applies if <ramp-volume> is used
 ramp-volume-0 = 
 ramp-volume-1 = 
@@ -335,7 +265,7 @@ format-discharging-background = ${colors.background-alt}
 format-discharging = "⁣  <ramp-capacity> <label-discharging>  "
 format-discharging-underline = ${self.format-charging-underline}
 
-format-full = 
+format-full =
 format-full-prefix-foreground = ${colors.foreground-alt}
 format-full-underline = ${self.format-charging-underline}
 
@@ -392,73 +322,3 @@ screenchange-reload = true
 margin-top = 5
 margin-bottom = 5
 
-
-; 
-; [module/xkeyboard]
-; type = internal/xkeyboard
-; blacklist-0 = num lock
-; 
-; format-prefix = " "
-; format-prefix-foreground = ${colors.foreground-alt}
-; format-prefix-underline = ${colors.secondary}
-; 
-; label-layout = %layout%
-; label-layout-underline = ${colors.secondary}
-; 
-; label-indicator-padding = 2
-; label-indicator-margin = 1
-; label-indicator-background = ${colors.secondary}
-; label-indicator-underline = ${colors.secondary}
-; 
-; [module/filesystem]
-; type = internal/fs
-; interval = 25
-; 
-; mount-0 = /
-; 
-; label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
-; label-unmounted = %mountpoint% not mounted
-; label-unmounted-foreground = ${colors.foreground-alt}
-; 
-;
-;[module/xbacklight]
-;type = internal/xbacklight
-;
-;format = <label> <bar>
-;label = BL
-;
-;bar-width = 10
-;bar-indicator = |
-;bar-indicator-foreground = #ff
-;bar-indicator-font = 2
-;bar-fill = -
-;bar-fill-font = 2
-;bar-fill-foreground = #9f78e1
-;bar-empty = -
-;bar-empty-font = 2
-;bar-empty-foreground = ${colors.foreground-alt}
-;bar-empty-background = ${colors.foreground-mod}
-;
-;[module/backlight-acpi]
-;inherit = module/xbacklight
-;type = internal/backlight
-;card = intel_backlight
-;
-;[module/cpu]
-;type = internal/cpu
-;interval = 2
-;format-prefix = " "
-;format-prefix-foreground = ${colors.foreground-alt}
-;format-prefix-background = ${colors.foreground-mod}
-;format-underline = #f90000
-;label = %percentage%%
-;
-;[module/memory]
-;type = internal/memory
-;interval = 2
-;format-prefix = " "
-;format-prefix-foreground = ${colors.foreground-alt}
-;format-underline = #4bffdc
-;label = %percentage_used%%
-
-; vim:ft=dosini
