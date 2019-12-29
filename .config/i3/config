@@ -117,7 +117,7 @@ mode "resize" {
 
 #exec bash ~/.scripts/configureAudio.sh
 #exec --no-startup-id jack_control start
-exec --no-startup-id pulseaudio --start
+#exec --no-startup-id pulseaudio --start
 #exec --no-startup-id pa-applet
 #exec --no-startup-id carla ~/.scripts/carla/CARLACONFIG &
 
@@ -134,7 +134,7 @@ exec --no-startup-id pulseaudio --start
 # Display Settings
 exec bash ~/.scripts/configureMonitors.sh
 # Sets Desktop Background
-#exec feh --bg-fill ~/.wallpapers/zeroTwo.png
+exec nitrogen --restore &
 # Starts Polybar
 exec_always bash ~/.config/polybar/launch.sh
 
