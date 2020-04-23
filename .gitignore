@@ -1,0 +1,12 @@
+# Ignore
+remoteServer/.config/remoteServer/smbcredentials
+obs-studio/.config/obs-studio/basic/profiles/GamePlayerColeLive/service.json
+obs-studio/.config/obs-studio/basic/profiles/GamePlayerColeLocal/service.json
+obs-studio/.config/obs-studio/logs/*
+minecraft/*
+
+# Allow
+!minecraft/.minecraft/resourcespacks/*
+!minecraft/.minecraft/saves/*
+!minecraft/.minecraft/shaderpacks/*
+!minecraft/.minecraft/minecraftSkin.png

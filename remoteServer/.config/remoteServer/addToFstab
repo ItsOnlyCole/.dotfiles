@@ -1,0 +1,4 @@
+#Drive Mounts from TheVault
+//192.168.1.97/ContentCreation /home/itsonlycole/ContentCreation cifs credentials=/home/itsonlycole/.smbcredentials,noperm 0 0
+
+//192.168.1.97/Cole/Backups /backups cifs credentials=/home/itsonlycole/.smbcredentials,noperm 0 0
