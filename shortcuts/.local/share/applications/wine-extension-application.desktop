@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=rundll32
+MimeType=application/x-ms-application;
+Exec=env WINEPREFIX="/home/itsonlycole/.local/share/wineprefixes/osu" /usr/bin/wine start /ProgIDOpen Application.Manifest %f
+NoDisplay=true
+StartupNotify=true
+Icon=1CD8_rundll32.0

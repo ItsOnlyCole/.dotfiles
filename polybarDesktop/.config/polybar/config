@@ -1,0 +1,124 @@
+;================;
+; Polybar Config ;
+;       By       ;
+;   ItsOnlyCole  ;
+;================;
+
+[colors]
+  light =                 ${xrdb:color15:#ffffff}
+  white =                 #FFFFFF
+  transparent =           #00000000
+
+[global/wm]
+  margin-top =  0
+  margin-bottom = 0
+
+[settings]
+  screenchange-reload = true
+  font-0 = Overpass Bold:pixelsize=11;2.25
+  font-1 = FontAwesome:pixelsize=12;1
+  font-2 = Font Awesome 5 Free:style=Regular:pixelsize=12;1
+  font-3 = Font Awesome 5 Free:style=Solid:pixelsize=12;1
+  font-4 = Font Awesome 5 Brands:pixelsize=8;1
+  barGap = 10
+  ;radius = 8
+  barWidth = 100%
+  barHeight = 30
+  monitor = DP-0
+  pseudo-transparency = false
+
+[bar/main]
+  monitor = ${settings.monitor}
+  fixed-center = true
+  dpi = 0
+  bottom = false
+  width = ${settings.barWidth}
+  height = ${settings.barHeight}
+  offset-x = 0
+  offset-y = 0
+  background = ${colors.transparent}
+  foreground = ${colors.white}
+  overline-size = 0
+  overline-color = #f00
+  underline-size = 2
+  underline-color = ${colors.white}
+  border-top-size = ${settings.barGap}
+  border-left-size = ${settings.barGap}
+  border-right-size = ${settings.barGap}
+  border-bottom-size = 0
+  border-color = ${colors.transparent}
+  spacing = 2
+  padding-left = 5
+  padding-right = 5
+  font-0 = ${settings.font-0}
+  font-1 = ${settings.font-1}
+  font-2 = ${settings.font-2}
+  font-3 = ${settings.font-3}
+  font-4 = ${settings.font-4}
+  module-margin-left = 2
+  module-margin-right = 2
+  #tray-position Set right for laptop and none for desktop
+  tray-position = none
+  modules-left = startMenu i3
+  modules-center = googleMusic
+  modules-right = date notifications
+
+;---------------------;
+;       MODULES       ;
+;---------------------;
+
+[module/date]
+  type = internal/date
+  interval = 5
+
+  ;Calendar Icon f073
+  date =  %a %b %d
+  ;Clock Icon f017
+  time =  %I:%M %p
+
+  format-prefix =
+  format-prefix-foreground = ${colors.white}
+
+  label = %date%   %time%
+
+[module/i3]
+  type = internal/i3
+  format = <label-state> <label-mode>
+  index-sort= true
+  enable-scroll = false
+  enable-click = true
+  label-mode = %mode%
+  label-mode-padding = 0
+  label-mode-foreground = ${colors.white}
+
+  label-focused = %index%
+  label-focused-padding = 2
+  label-focused-underline = ${colors.white}
+
+  label-unfocused = %index%
+  label-unfocused-padding = 2
+
+  label-visible = %index%
+  label-visible-padding = 2
+
+  label-urgent = %index%
+  label-urgent-padding = 2
+
+[module/googleMusic]
+  type = custom/script
+  interval = 1
+  label = %output%
+  exec = ~/.config/polybar/scripts/mpris.sh
+
+[module/notifications]
+  type = custom/text
+  ;FontAwesome Bell f0f3
+  content = 
+  click-left = ~/.config/polybar/scripts/resumeNotifs.sh &
+  click-right = ~/.config/polybar/scripts/pauseNotifs.sh &
+
+[module/startMenu]
+  type = custom/text
+  interval = 1
+  content = ""
+  click-left = rofi -show drun -themerofi -show drun -theme Arc-Dark

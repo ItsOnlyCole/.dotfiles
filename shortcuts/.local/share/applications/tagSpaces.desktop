@@ -1,0 +1,7 @@
+[Desktop Entry]
+
+Type=Application
+Name=Tag Spaces
+Comment=Tag Based File Management
+Exec=/home/itsonlycole/.local/share/appimages/tagspaces.AppImage
+Terminal=false

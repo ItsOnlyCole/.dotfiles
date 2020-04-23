@@ -1,0 +1,12 @@
+game:
+  arch: win32
+  exe: drive_c/osu/osu!.exe
+  prefix: /home/itsonlycole/Games/osu
+system:
+  env:
+    WINEDLLPATH: /home/itsonlycole/Games/osu/drive_c/osu/bin32
+  pulse_latency: true
+wine:
+  overrides:
+    discord-rpc: builtin
+  version: tkg-osu-4.6-x86_64

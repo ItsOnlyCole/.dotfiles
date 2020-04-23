@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE CARLA-PROJECT>
+<CARLA-PROJECT VERSION='2.0'>
+ <EngineSettings>
+  <ForceStereo>false</ForceStereo>
+  <PreferPluginBridges>false</PreferPluginBridges>
+  <PreferUiBridges>true</PreferUiBridges>
+  <UIsAlwaysOnTop>false</UIsAlwaysOnTop>
+  <MaxParameters>200</MaxParameters>
+  <UIBridgesTimeout>4000</UIBridgesTimeout>
+ </EngineSettings>
+
+ <Transport>
+  <BeatsPerMinute>120</BeatsPerMinute>
+ </Transport>
+
+ <ExternalPatchbay>
+  <Connection>
+   <Source>system:capture_1</Source>
+   <Target>micCap:mono</Target>
+  </Connection>
+  <Connection>
+   <Source>media:front-left</Source>
+   <Target>system:playback_1</Target>
+  </Connection>
+  <Connection>
+   <Source>media:front-right</Source>
+   <Target>system:playback_2</Target>
+  </Connection>
+  <Connection>
+   <Source>SteelSeriesMic:mono</Source>
+   <Target>micCap:mono</Target>
+  </Connection>
+  <Connection>
+   <Source>voip:front-left</Source>
+   <Target>system:playback_3</Target>
+  </Connection>
+  <Connection>
+   <Source>voip:front-left</Source>
+   <Target>voipCap:front-left</Target>
+  </Connection>
+  <Connection>
+   <Source>voip:front-right</Source>
+   <Target>system:playback_4</Target>
+  </Connection>
+  <Connection>
+   <Source>voip:front-right</Source>
+   <Target>voipCap:front-right</Target>
+  </Connection>
+  <Connection>
+   <Source>Mixer Master:capture_1</Source>
+   <Target>masterCap:front-left</Target>
+  </Connection>
+  <Connection>
+   <Source>Mixer Master:capture_1</Source>
+   <Target>SteelSeries Out:playback_1</Target>
+  </Connection>
+  <Connection>
+   <Source>Mixer Master:capture_2</Source>
+   <Target>masterCap:front-right</Target>
+  </Connection>
+  <Connection>
+   <Source>Mixer Master:capture_2</Source>
+   <Target>SteelSeries Out:playback_2</Target>
+  </Connection>
+ </ExternalPatchbay>
+</CARLA-PROJECT>

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Wine Installer
+MimeType=application/x-wine-extension-msp;
+Exec=env WINEPREFIX="/home/itsonlycole/Games/world-of-warcraft" /home/ubuntu/buildbot/runners/wine/lutris-5.5-x86_64/bin/wine start /ProgIDOpen Msi.Patch %f
+NoDisplay=true
+StartupNotify=true
+Icon=2402_msiexec.0
