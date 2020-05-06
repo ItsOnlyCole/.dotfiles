@@ -147,12 +147,14 @@ alias please='sudo'
 alias SA='bash ~/.config/scripts/configureAudio.sh'
 alias rawFootage='cd ~/ContentCreation/02.RawCapture/00.Raw/'
 alias processedFootage='cd ~/ContentCreation/02.RawCapture/01.Processed/'
-alias splitAudio='bash ~/.config/scripts/pullFootageAudio.sh'
+alias ingestFootage='bash ~/.config/scripts/ingestFootage.sh'
 alias shutdown='bash ~/.config/scripts/shutdown.sh'
 alias reboot='bash ~/.config/scripts/shutdown.sh true'
 alias pushNotes='bash ~/.config/scripts/gitAutoPush.sh ~/Notes'
 alias pullNotes='bash ~/.config/scripts/gitAutoPull.sh ~/Notes'
 alias commitNotes='bash ~/.config/scripts/gitAutoCommit.sh ~/Notes'
+alias compress='bash ~/.config/scripts/compress.sh'
+alias decompress='bash ~/.config/scripts/decompress.sh'
 
 #Sets color scheme
 cat ~/.cache/wal/sequences &
