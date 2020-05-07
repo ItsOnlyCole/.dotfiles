@@ -247,43 +247,17 @@
             "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
-            "hotkeys": {},
-            "id": "color_source",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "GreenScreen",
-            "prev_ver": 419430406,
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "color": 4278255445
-            },
-            "sync": 0,
-            "versioned_id": "color_source_v2",
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
             "hotkeys": {
-                "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.Browser": [],
-                "libobs.hide_scene_item.GreenScreen": [],
-                "libobs.show_scene_item.Browser": [],
-                "libobs.show_scene_item.GreenScreen": []
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
             },
-            "id": "scene",
-            "mixers": 0,
+            "id": "browser_source",
+            "mixers": 255,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Scene 2",
+            "name": "Browser",
             "prev_ver": 419430406,
             "private_settings": {},
             "push-to-mute": false,
@@ -291,71 +265,12 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "custom_size": false,
-                "id_counter": 3,
-                "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 1,
-                        "locked": false,
-                        "name": "GreenScreen",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 3,
-                        "locked": false,
-                        "name": "Browser",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": false
-                    }
-                ]
+                "is_local_file": true,
+                "local_file": "/home/itsonlycole/ContentCreation/04.Resources/00.DesignIterations/200411_AnimeMinimal/Social Media Popup by Nerd or Die/Popup Files/_left-social-media-popup-v2.html",
+                "restart_when_active": true
             },
             "sync": 0,
-            "versioned_id": "scene",
+            "versioned_id": "browser_source",
             "volume": 1.0
         },
         {
@@ -363,56 +278,29 @@
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
-            "filters": [
-                {
-                    "balance": 0.5,
-                    "deinterlace_field_order": 0,
-                    "deinterlace_mode": 0,
-                    "enabled": true,
-                    "flags": 0,
-                    "hotkeys": {},
-                    "id": "obs-stream-effects-filter-blur",
-                    "mixers": 0,
-                    "monitoring_type": 0,
-                    "muted": false,
-                    "name": "Blur",
-                    "prev_ver": 419430406,
-                    "private_settings": {},
-                    "push-to-mute": false,
-                    "push-to-mute-delay": 0,
-                    "push-to-talk": false,
-                    "push-to-talk-delay": 0,
-                    "settings": {
-                        "Commit": "771f4138",
-                        "Filter.Blur.Size": 43.0,
-                        "Filter.Blur.StepScale": true,
-                        "Filter.Blur.StepScale.X": 0.01,
-                        "Filter.Blur.StepScale.Y": 0.01,
-                        "Filter.Blur.SubType": "area",
-                        "Filter.Blur.Type": "box",
-                        "Version": 34359738368
-                    },
-                    "sync": 0,
-                    "versioned_id": "obs-stream-effects-filter-blur",
-                    "volume": 1.0
-                }
-            ],
             "flags": 0,
             "hotkeys": {},
-            "id": "xshm_input",
+            "id": "v4l2_input",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Main Screen",
+            "name": "CaptureCard",
             "prev_ver": 419430406,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
-            "settings": {},
+            "settings": {
+                "Exposure, Auto": 5557561106012987725,
+                "Power Line Frequency": 7234307546238118212,
+                "device_id": "/dev/video4",
+                "input": 0,
+                "pixelformat": 842094169,
+                "resolution": 125830200
+            },
             "sync": 0,
-            "versioned_id": "xshm_input",
+            "versioned_id": "v4l2_input",
             "volume": 1.0
         },
         {
@@ -512,29 +400,56 @@
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
+            "filters": [
+                {
+                    "balance": 0.5,
+                    "deinterlace_field_order": 0,
+                    "deinterlace_mode": 0,
+                    "enabled": true,
+                    "flags": 0,
+                    "hotkeys": {},
+                    "id": "obs-stream-effects-filter-blur",
+                    "mixers": 0,
+                    "monitoring_type": 0,
+                    "muted": false,
+                    "name": "Blur",
+                    "prev_ver": 419430406,
+                    "private_settings": {},
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "settings": {
+                        "Commit": "771f4138",
+                        "Filter.Blur.Size": 43.0,
+                        "Filter.Blur.StepScale": true,
+                        "Filter.Blur.StepScale.X": 0.01,
+                        "Filter.Blur.StepScale.Y": 0.01,
+                        "Filter.Blur.SubType": "area",
+                        "Filter.Blur.Type": "box",
+                        "Version": 34359738368
+                    },
+                    "sync": 0,
+                    "versioned_id": "obs-stream-effects-filter-blur",
+                    "volume": 1.0
+                }
+            ],
             "flags": 0,
             "hotkeys": {},
-            "id": "v4l2_input",
+            "id": "xshm_input",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "CaptureCard",
+            "name": "Main Screen",
             "prev_ver": 419430406,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
-            "settings": {
-                "Exposure, Auto": 5557561106012987725,
-                "Power Line Frequency": 7234307546238118212,
-                "device_id": "/dev/video4",
-                "input": 0,
-                "pixelformat": 842094169,
-                "resolution": 125830200
-            },
+            "settings": {},
             "sync": 0,
-            "versioned_id": "v4l2_input",
+            "versioned_id": "xshm_input",
             "volume": 1.0
         },
         {
@@ -544,16 +459,17 @@
             "enabled": true,
             "flags": 0,
             "hotkeys": {
-                "libobs.mute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "libobs.unmute": []
+                "OBSBasic.SelectScene": [],
+                "libobs.hide_scene_item.Browser": [],
+                "libobs.hide_scene_item.GreenScreen": [],
+                "libobs.show_scene_item.Browser": [],
+                "libobs.show_scene_item.GreenScreen": []
             },
-            "id": "browser_source",
-            "mixers": 255,
+            "id": "scene",
+            "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Browser",
+            "name": "Scene 2",
             "prev_ver": 419430406,
             "private_settings": {},
             "push-to-mute": false,
@@ -561,12 +477,96 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "is_local_file": true,
-                "local_file": "/home/itsonlycole/ContentCreation/04.Resources/00.DesignIterations/200411_AnimeMinimal/Social Media Popup by Nerd or Die/Popup Files/_left-social-media-popup-v2.html",
-                "restart_when_active": true
+                "custom_size": false,
+                "id_counter": 3,
+                "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 1,
+                        "locked": false,
+                        "name": "GreenScreen",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 3,
+                        "locked": false,
+                        "name": "Browser",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": false
+                    }
+                ]
             },
             "sync": 0,
-            "versioned_id": "browser_source",
+            "versioned_id": "scene",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "color_source",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "GreenScreen",
+            "prev_ver": 419430406,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "color": 4278255445
+            },
+            "sync": 0,
+            "versioned_id": "color_source_v2",
             "volume": 1.0
         }
     ],
