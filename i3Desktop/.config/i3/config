@@ -158,10 +158,10 @@ set $ws9 9
 set $ws10 10
 
 # Assign certain Workspaces to specific Montiors
-workspace $ws2 output DP-0
+workspace $ws2 output DP-2
 workspace $ws1 output HDMI-1
-workspace $ws3 output DP-2
-workspace $ws4 output DVI-D-0
+workspace $ws3 output DP-0
+workspace $ws9 output DP-0
 
 # Switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -193,9 +193,9 @@ bindsym $mod+Shift+0 move container to workspace $ws10; workspace $ws10
 #################
 
 # Open applications on specific workspaces
-assign [class="Carla"] $ws4
+assign [class="Carla"] $ws9
 #assign [class="Google Play Music Desktop Player"] $wsMedia
-assign [class="discord"] $ws4
+assign [class="discord"] $ws3
 #assign [class="Steam"] $wsSteam
 #assign [class="csgo_linux64"] $wsSteam
 

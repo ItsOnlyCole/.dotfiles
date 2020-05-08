@@ -24,7 +24,7 @@
   ;radius = 8
   barWidth = 100%
   barHeight = 30
-  monitor = DP-0
+  monitor = DP-2
   pseudo-transparency = false
 
 [bar/main]
