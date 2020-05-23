@@ -141,7 +141,6 @@ bindsym $mod+Shift+Print exec --no-startup-id scrot -w ~/Pictures/Screenshots/%Y
 bindsym $mod+Print --release exec --no-startup-id scrot -s ~/Pictures/Screenshots/%Y-%m-%d_%H:%M:%S.png
 bindsym $mod+Ctrl+q --release exec --no-startup-id xkill
 bindsym $mod+Ctrl+s exec --no-startup-id pacmd set-card-profile alsa_card.pci-0000_23_00.1 "output:hdmi-stereo-extra2"
-#bindsym $mod+Shift+k exec --no-startup-id xkbcomp -i 15 ~/.config/xkbConfigs/tartaursV2.xkb $DISPLAY
 
 # Scripts
 
