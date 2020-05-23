@@ -148,6 +148,7 @@ alias SA='bash ~/.config/scripts/configureAudio.sh'
 alias rawFootage='cd ~/ContentCreation/02.RawCapture/00.Raw/'
 alias processedFootage='cd ~/ContentCreation/02.RawCapture/01.Processed/'
 alias ingestFootage='bash ~/.config/scripts/ingestFootage.sh'
+alias createProject='bash ~/.config/scripts/createProject.sh'
 alias shutdown='bash ~/.config/scripts/shutdown.sh'
 alias reboot='bash ~/.config/scripts/shutdown.sh true'
 alias pushNotes='bash ~/.config/scripts/gitAutoPush.sh ~/Notes'
@@ -155,6 +156,8 @@ alias pullNotes='bash ~/.config/scripts/gitAutoPull.sh ~/Notes'
 alias commitNotes='bash ~/.config/scripts/gitAutoCommit.sh ~/Notes'
 alias compress='bash ~/.config/scripts/compress.sh'
 alias decompress='bash ~/.config/scripts/decompress.sh'
+alias snookeyhelp='echo "use snookey commands"'
+alias convertToWebm='bash ~/.config/scripts/convertToWebm.sh'
 
 #Sets color scheme
 cat ~/.cache/wal/sequences &

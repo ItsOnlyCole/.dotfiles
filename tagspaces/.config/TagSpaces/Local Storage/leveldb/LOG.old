@@ -1,5 +1,5 @@
-2020/04/24-15:30:26.314 291e04 Reusing MANIFEST leveldb/MANIFEST-000001
-2020/04/24-15:30:26.314 291e04 Recovering log #24
-2020/04/24-15:30:26.315 291e04 Level-0 table #26: started
-2020/04/24-15:30:26.318 291e04 Level-0 table #26: 17072 bytes OK
-2020/04/24-15:30:26.321 291e04 Delete type=0 #24
+2020/05/11-17:31:28.753 ec413 Reusing MANIFEST leveldb/MANIFEST-000001
+2020/05/11-17:31:28.753 ec413 Recovering log #30
+2020/05/11-17:31:28.754 ec413 Level-0 table #33: started
+2020/05/11-17:31:28.756 ec413 Level-0 table #33: 17641 bytes OK
+2020/05/11-17:31:28.759 ec413 Delete type=0 #30

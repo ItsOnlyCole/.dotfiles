@@ -3,6 +3,10 @@ remoteServer/.config/remoteServer/smbcredentials
 obs-studio/.config/obs-studio/basic/profiles/GamePlayerColeLive/service.json
 obs-studio/.config/obs-studio/basic/profiles/GamePlayerColeLocal/service.json
 obs-studio/.config/obs-studio/logs/*
+obs-studio/.config/obs-studio/plugin_config/*
+obs-studio/.config/obs-studio/profiler_data/*
+obs-studio/.config/obs-studio/plugins/*
+
 minecraft/.minecraft/*
 
 # Allow

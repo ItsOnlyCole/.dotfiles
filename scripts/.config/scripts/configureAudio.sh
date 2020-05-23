@@ -29,7 +29,7 @@ killall -9 pulsaudio
 pulseaudio --start
 sleep 5
 unloadDevice SteelSeries
-unloadDevice USB_Sound_Device
+#unloadDevice USB_Sound_Device
 unloadDevice Burr
 
 pacmd unload-module module-jack-sink
@@ -44,10 +44,10 @@ pacmd load-module module-jack-sink channels=1 sink_name=SteelSeriesMic client_na
 #pacmd load-module module-jack-sink channels=2 sink_name=game client_name=game connect=false
 pacmd load-module module-jack-sink channels=2 sink_name=voip client_name=voip connect=false
 
-#alsa_in -j "SteelSeries Mic" -d hw:6 -q 2 2> /dev/null 1> /dev/null &
+alsa_in -j "SteelSeries Mic" -d hw:7 -q 2 2> /dev/null 1> /dev/null &
 alsa_in -j "Mixer Master" -d hw:CODEC -q 2 2> /dev/null 1> /dev/null &
 alsa_out -j "SteelSeries Out" -d hw:Wireless,1 -q 2 2> /dev/null 1> /dev/null &
-pactl load-module module-loopback source=alsa_input.usb-SteelSeries_Arctis_Pro_Wireless-00.analog-mono sink=SteelSeriesMic
+#pactl load-module module-loopback source=alsa_input.usb-SteelSeries_Arctis_Pro_Wireless-00.analog-mono sink=SteelSeriesMic
 #pacmd load-module module-jack-sink channels=2 sink_name=voip-out client_name=voip-out connect=false
 
 #pacmd load-module module-jack-sink channels=2 sink_name=games-out client_name=games-out connect=false

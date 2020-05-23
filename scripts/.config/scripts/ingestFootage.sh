@@ -1,36 +1,88 @@
 #!/bin/bash
-originalVideo=$1
-renameVideo=$2
-# echo $renameVideo
-#if video rename was given, renames the video and accompanying files/folders
-###New Name needs to be newFileName.extension
-###ie: oldFileName.mkv > newFileName.mkv
-if [ -z $renameVideo ]
+
+importToProject=$1
+
+#Function to check if originalVideo was inputted
+function checkForOriginalVideo () {
+    if [[ -z $originalVideo ]]
+    then
+        echo "Error: No Original Video Inputted!"
+        exit 1
+    fi
+}
+
+#Assigns arguments to variables based on if importToProject is true or not.
+#Creates or sets up projectDirectories
+if [[ $importToProject == "true" ]] || [[ $importToProject == "True" ]] \
+    || [[ $importToProject == "t" ]] || [[ $importToProject == "T" ]]
 then
-  #Do Nothing
-  echo "No Renaming Needed."
+    echo "Import to Project: $2"
+    projectDir="/home/itsonlycole/ContentCreation/Projects/Active/$2"
+    echo "Project Directory set to $projectDir"
+    originalVideo=$3
+    renameVideo=$4
+    checkForOriginalVideo
 else
-  echo "renaming $originalVideo to $renameVideo"
-  mv $originalVideo $renameVideo
-  originalVideo=$renameVideo
+    #Sets OriginalVideo and Rename Video based on if false or nothing is put
+    if [[ $importToProject == "false" ]] || [[ $importToProject == "False" ]] \
+        || [[ $importToProject == "f" ]] || [[ $importToProject == "F" ]]
+    then
+        originalVideo=$2
+        renameVideo=$3
+    else
+        originalVideo=$1
+        renameVideo=$2
+    fi
+
+    checkForOriginalVideo
+    #Sets the projectDir based on if video is getting renamed or not
+    if [[ -z $renameVideo ]] #True if $renameVideo is NULL
+    then
+        projectDir="/home/itsonlycole/ContentCreation/Projects/Active/${originalVideo%.*}"
+    else
+        projectDir="/home/itsonlycole/ContentCreation/Projects/Active/${renameVideo%.*}"
+    fi
+    echo "Creating New Project"
+    echo "Set Project Directory to $projectDir"
+    echo "Creating Project Directories"
+    #Generates Project Directory and Sub-Directories
+    mkdir $projectDir
+    mkdir $projectDir/project
+    mkdir $projectDir/video
+    mkdir $projectDir/audio
+    mkdir $projectDir/notes
+    mkdir $projectDir/images
+    mkdir $projectDir/graphics
+    mkdir $projectDir/renders
 fi
 
-projectName=${originalVideo::-4}
-convertedVideo=$projectName.mp4
+#Copies over sourceFile
+echo "Copying $originalVideo to $projectDir/video"
+cp $originalVideo "$projectDir/video/$originalVideo"
 
-#Creates project folder to store everything
-mkdir $projectName
-mkdir $projectName/01_projectFiles
-mkdir $projectName/02_video
-mkdir $projectName/03_audio
-mkdir $projectName/04_sourceFiles
-mkdir $projectName/05_renders
+#Renames orginalVideo if rename isn't null / sets vars for videopath, convertedvideo, and audioDir
+if [[ ! -z $renameVideo ]]
+then
+    echo "Renaming $originalVideo to $renameVideo"
+    mv "$projectDir/video/$originalVideo" "$projectDir/video/$renameVideo"
+    videoPath="$projectDir/video/$renameVideo"
+    convertedVideo="${videoPath%.*}.mp4"
+    audioDir="$projectDir/audio/$renameVideo"
+    mkdir $audioDir
+else
+    videoPath="$projectDir/video/$originalVideo"
+    convertedVideo="${videoPath%.*}.mp4"
+    audioDir="$projectDir/audio/$originalVideo"
+    mkdir $audioDir
+fi
 
 #Extracts multi-track audio into seperate audio files
-ffmpeg -i $originalVideo -map 0:a:0 -f wav $projectName/03_audio/masterAudio.wav -map 0:a:1 -f wav $projectName/03_audio/micAudio.wav -map 0:a:2 -f wav $projectName/03_audio/voipAudio.wav -map 0:a:3 -f wav $projectName/03_audio/gameAudio.wav -map 0:a:4 -f wav $projectName/03_audio/mediaAudio.wav
+echo "Extracting Audio"
+ffmpeg -i "$videoPath" -map 0:a:0 -f wav "$audioDir/masterAudio.wav" -map 0:a:1 -f wav "$audioDir/micAudio.wav" -map 0:a:2 -f wav "$audioDir/voipAudio.wav" -map 0:a:3 -f wav "$audioDir/gameAudio.wav" -map 0:a:4 -f wav "$audioDir/mediaAudio.wav"
 
-#Converts video to format useable by Davinci Resolve
-HandBrakeCLI -i $originalVideo -o $convertedVideo --encoder mpeg4 --vfr --quality 1 --two-pass --turbo --vb 6000
+#Converts the source video to format useable by Adobe Premiere
+echo "Converting Video to MP4"
+HandBrakeCLI -i "$videoPath" \
+    -o "$convertedVideo" --encoder mpeg4 --vfr --quality 1 --two-pass --turbo --vb 6000
 
-#Moves the original video file to the project folder
-mv $originalVideo $projectName/04_sourceFiles/$originalVideo
+echo "Ingesting Footage Finished"

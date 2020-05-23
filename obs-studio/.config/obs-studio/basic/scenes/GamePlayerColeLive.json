@@ -17,7 +17,7 @@
                 "monitoring_type": 0,
                 "muted": false,
                 "name": "Noise Gate",
-                "prev_ver": 419430406,
+                "prev_ver": 419430408,
                 "private_settings": {},
                 "push-to-mute": false,
                 "push-to-mute-delay": 0,
@@ -44,7 +44,7 @@
         "monitoring_type": 0,
         "muted": false,
         "name": "Mic",
-        "prev_ver": 419430406,
+        "prev_ver": 419430408,
         "private_settings": {},
         "push-to-mute": false,
         "push-to-mute-delay": 0,
@@ -74,7 +74,7 @@
         "monitoring_type": 0,
         "muted": false,
         "name": "Voip",
-        "prev_ver": 419430406,
+        "prev_ver": 419430408,
         "private_settings": {},
         "push-to-mute": false,
         "push-to-mute-delay": 0,
@@ -85,7 +85,7 @@
         },
         "sync": 0,
         "versioned_id": "pulse_input_capture",
-        "volume": 0.25781241059303284
+        "volume": 0.00041255296673625708
     },
     "AuxAudioDevice3": {
         "balance": 0.5,
@@ -104,7 +104,7 @@
         "monitoring_type": 0,
         "muted": false,
         "name": "MasterCap",
-        "prev_ver": 419430406,
+        "prev_ver": 419430408,
         "private_settings": {},
         "push-to-mute": false,
         "push-to-mute-delay": 0,
@@ -134,7 +134,7 @@
         "monitoring_type": 0,
         "muted": false,
         "name": "Media",
-        "prev_ver": 419430406,
+        "prev_ver": 419430408,
         "private_settings": {},
         "push-to-mute": false,
         "push-to-mute-delay": 0,
@@ -164,14 +164,14 @@
         "monitoring_type": 0,
         "muted": false,
         "name": "Game",
-        "prev_ver": 419430406,
+        "prev_ver": 419430408,
         "private_settings": {},
         "push-to-mute": false,
         "push-to-mute-delay": 0,
         "push-to-talk": false,
         "push-to-talk-delay": 0,
         "settings": {
-            "device_id": "alsa_output.pci-0000_23_00.1.hdmi-stereo-extra1.monitor"
+            "device_id": "alsa_output.pci-0000_23_00.1.hdmi-stereo-extra2.monitor"
         },
         "sync": 0,
         "versioned_id": "pulse_output_capture",
@@ -179,7 +179,7 @@
     },
     "current_program_scene": "Main",
     "current_scene": "Main",
-    "current_transition": "Fade",
+    "current_transition": "Woosh",
     "groups": [
         {
             "balance": 0.5,
@@ -188,9 +188,9 @@
             "enabled": true,
             "flags": 0,
             "hotkeys": {
-                "libobs.hide_scene_item.FaceCam": [],
+                "libobs.hide_scene_item.Facecam": [],
                 "libobs.hide_scene_item.WebcamBorder": [],
-                "libobs.show_scene_item.FaceCam": [],
+                "libobs.show_scene_item.Facecam": [],
                 "libobs.show_scene_item.WebcamBorder": []
             },
             "id": "group",
@@ -198,7 +198,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "WebcamGroup",
-            "prev_ver": 419430406,
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -223,18 +223,18 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 25,
+                        "id": 32,
                         "locked": true,
-                        "name": "FaceCam",
+                        "name": "Facecam",
                         "pos": {
-                            "x": 2.77587890625,
-                            "y": 4.9850311279296875
+                            "x": 2.5295867919921875,
+                            "y": 5.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 0.27043277025222778,
-                            "y": 0.27048403024673462
+                            "x": 0.26979166269302368,
+                            "y": 0.26944443583488464
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -293,7 +293,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Background",
-            "prev_ver": 419430406,
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -404,18 +404,13 @@
             "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
-            "hotkeys": {
-                "libobs.hide_scene_item.FollowAlert": [],
-                "libobs.hide_scene_item.SubAlert": [],
-                "libobs.show_scene_item.FollowAlert": [],
-                "libobs.show_scene_item.SubAlert": []
-            },
+            "hotkeys": {},
             "id": "group",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
             "name": "Alerts",
-            "prev_ver": 419430406,
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -426,66 +421,7 @@
                 "cx": 1382,
                 "cy": 1080,
                 "id_counter": 0,
-                "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 29,
-                        "locked": true,
-                        "name": "FollowAlert",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 680.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 30,
-                        "locked": true,
-                        "name": "SubAlert",
-                        "pos": {
-                            "x": 582.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    }
-                ]
+                "items": []
             },
             "sync": 0,
             "versioned_id": "group",
@@ -573,7 +509,90 @@
                     "monitoring_type": 0,
                     "muted": false,
                     "name": "Chroma Key",
-                    "prev_ver": 419430406,
+                    "prev_ver": 419430408,
+                    "private_settings": {},
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "settings": {
+                        "similarity": 400
+                    },
+                    "sync": 0,
+                    "versioned_id": "chroma_key_filter",
+                    "volume": 1.0
+                }
+            ],
+            "flags": 0,
+            "hotkeys": {
+                "VLCSource.PlayPause": [],
+                "VLCSource.PlaylistNext": [],
+                "VLCSource.PlaylistPrev": [],
+                "VLCSource.Restart": [],
+                "VLCSource.Stop": [],
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "vlc_source",
+            "mixers": 255,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "VLC Video Source",
+            "prev_ver": 419430408,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "playlist": [
+                    {
+                        "hidden": false,
+                        "selected": false,
+                        "value": "/home/itsonlycole/ContentCreation/Resources/DesignIterations/200411_AnimeMinimal/SocialMediaSliders/SocialSlider-Reddit_002.avi"
+                    },
+                    {
+                        "hidden": false,
+                        "selected": false,
+                        "value": "/home/itsonlycole/ContentCreation/Resources/DesignIterations/200411_AnimeMinimal/SocialMediaSliders/SocialSlider-TikTok_002.avi"
+                    },
+                    {
+                        "hidden": false,
+                        "selected": false,
+                        "value": "/home/itsonlycole/ContentCreation/Resources/DesignIterations/200411_AnimeMinimal/SocialMediaSliders/SocialSlider-Twitter_002.avi"
+                    },
+                    {
+                        "hidden": false,
+                        "selected": false,
+                        "value": "/home/itsonlycole/ContentCreation/Resources/DesignIterations/200411_AnimeMinimal/SocialMediaSliders/SocialSlider-Youtube_002.avi"
+                    }
+                ]
+            },
+            "sync": 0,
+            "versioned_id": "vlc_source",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "filters": [
+                {
+                    "balance": 0.5,
+                    "deinterlace_field_order": 0,
+                    "deinterlace_mode": 0,
+                    "enabled": true,
+                    "flags": 0,
+                    "hotkeys": {},
+                    "id": "chroma_key_filter",
+                    "mixers": 0,
+                    "monitoring_type": 0,
+                    "muted": false,
+                    "name": "Chroma Key",
+                    "prev_ver": 419430408,
                     "private_settings": {},
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -600,7 +619,7 @@
                     "monitoring_type": 0,
                     "muted": false,
                     "name": "Crop/Pad",
-                    "prev_ver": 419430406,
+                    "prev_ver": 419430408,
                     "private_settings": {},
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -633,7 +652,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "StartingSoonCoffeeSmoke",
-            "prev_ver": 419430406,
+            "prev_ver": 419430408,
             "private_settings": {
                 "mixer_hidden": true
             },
@@ -643,7 +662,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "clear_on_media_end": false,
-                "local_file": "/home/itsonlycole/ContentCreation/04.Resources/00.DesignIterations/200411_AnimeMinimal/StreamGraphics/coffeeSmoke.mp4",
+                "local_file": "/home/itsonlycole/ContentCreation/Resources/DesignIterations/200411_AnimeMinimal/StreamGraphics/coffeeSmoke.mp4",
                 "looping": true,
                 "restart_on_activate": false
             },
@@ -663,7 +682,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "CaptureCard",
-            "prev_ver": 419430406,
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -693,14 +712,14 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "StartingSoonBackground",
-            "prev_ver": 419430406,
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "file": "/home/itsonlycole/ContentCreation/04.Resources/00.DesignIterations/200411_AnimeMinimal/StreamGraphics/StartingSoon.png"
+                "file": "/home/itsonlycole/ContentCreation/Resources/DesignIterations/200411_AnimeMinimal/StreamGraphics/StartingSoon.png"
             },
             "sync": 0,
             "versioned_id": "image_source",
@@ -715,20 +734,18 @@
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
                 "libobs.hide_scene_item.Background": [],
-                "libobs.hide_scene_item.FollowAlert": [],
                 "libobs.hide_scene_item.StartingSoonText": [],
-                "libobs.hide_scene_item.SubAlert": [],
+                "libobs.hide_scene_item.StartingSoonVisualizer": [],
                 "libobs.show_scene_item.Background": [],
-                "libobs.show_scene_item.FollowAlert": [],
                 "libobs.show_scene_item.StartingSoonText": [],
-                "libobs.show_scene_item.SubAlert": []
+                "libobs.show_scene_item.StartingSoonVisualizer": []
             },
             "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
             "name": "StartingSoon",
-            "prev_ver": 419430406,
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -736,7 +753,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 16,
+                "id_counter": 18,
                 "items": [
                     {
                         "align": 5,
@@ -898,41 +915,12 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 15,
-                        "locked": false,
-                        "name": "FollowAlert",
+                        "id": 18,
+                        "locked": true,
+                        "name": "StartingSoonVisualizer",
                         "pos": {
-                            "x": 920.0,
-                            "y": 680.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 16,
-                        "locked": false,
-                        "name": "SubAlert",
-                        "pos": {
-                            "x": 480.0,
-                            "y": 0.0
+                            "x": -3.0,
+                            "y": 921.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
@@ -966,11 +954,11 @@
                 "libobs.unmute": []
             },
             "id": "ffmpeg_source",
-            "mixers": 255,
+            "mixers": 192,
             "monitoring_type": 0,
             "muted": false,
             "name": "AFKBackground",
-            "prev_ver": 419430406,
+            "prev_ver": 419430408,
             "private_settings": {
                 "mixer_hidden": true
             },
@@ -979,7 +967,7 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "local_file": "/home/itsonlycole/ContentCreation/04.Resources/00.DesignIterations/200411_AnimeMinimal/StreamGraphics/AFK_01.gif",
+                "local_file": "/home/itsonlycole/ContentCreation/Resources/DesignIterations/200411_AnimeMinimal/StreamGraphics/AFK_01.gif",
                 "looping": true
             },
             "sync": 0,
@@ -996,21 +984,19 @@
                 "OBSBasic.SelectScene": [],
                 "libobs.hide_scene_item.AFKBackground": [],
                 "libobs.hide_scene_item.AFKText": [],
-                "libobs.hide_scene_item.FollowAlert": [],
+                "libobs.hide_scene_item.AFKVisualizer": [],
                 "libobs.hide_scene_item.SmokingIsBad": [],
-                "libobs.hide_scene_item.SubAlert": [],
                 "libobs.show_scene_item.AFKBackground": [],
                 "libobs.show_scene_item.AFKText": [],
-                "libobs.show_scene_item.FollowAlert": [],
-                "libobs.show_scene_item.SmokingIsBad": [],
-                "libobs.show_scene_item.SubAlert": []
+                "libobs.show_scene_item.AFKVisualizer": [],
+                "libobs.show_scene_item.SmokingIsBad": []
             },
             "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
             "name": "Afk",
-            "prev_ver": 419430406,
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -1018,7 +1004,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 9,
+                "id_counter": 11,
                 "items": [
                     {
                         "align": 5,
@@ -1120,41 +1106,12 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 8,
-                        "locked": false,
-                        "name": "FollowAlert",
+                        "id": 11,
+                        "locked": true,
+                        "name": "AFKVisualizer",
                         "pos": {
-                            "x": 629.0,
-                            "y": 680.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
                             "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 9,
-                        "locked": false,
-                        "name": "SubAlert",
-                        "pos": {
-                            "x": 692.0,
-                            "y": 0.0
+                            "y": 908.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
@@ -1189,7 +1146,7 @@
                     "monitoring_type": 0,
                     "muted": false,
                     "name": "Color Key",
-                    "prev_ver": 419430406,
+                    "prev_ver": 419430408,
                     "private_settings": {},
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -1221,7 +1178,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "WebcamBorder",
-            "prev_ver": 419430406,
+            "prev_ver": 419430408,
             "private_settings": {
                 "mixer_hidden": true
             },
@@ -1234,8 +1191,8 @@
                 "playlist": [
                     {
                         "hidden": false,
-                        "selected": false,
-                        "value": "/home/itsonlycole/ContentCreation/04.Resources/00.DesignIterations/200411_AnimeMinimal/StreamGraphics/Webcam_16-9.webm"
+                        "selected": true,
+                        "value": "/home/itsonlycole/ContentCreation/Resources/DesignIterations/200411_AnimeMinimal/StreamGraphics/Webcam_16-9.webm"
                     }
                 ]
             },
@@ -1253,13 +1210,15 @@
                 "OBSBasic.SelectScene": [],
                 "libobs.hide_scene_item.Alerts": [],
                 "libobs.hide_scene_item.CaptureCard": [],
+                "libobs.hide_scene_item.Linux Browser": [],
                 "libobs.hide_scene_item.Main Screen": [],
-                "libobs.hide_scene_item.SocialHandles2": [],
+                "libobs.hide_scene_item.VLC Video Source": [],
                 "libobs.hide_scene_item.WebcamGroup": [],
                 "libobs.show_scene_item.Alerts": [],
                 "libobs.show_scene_item.CaptureCard": [],
+                "libobs.show_scene_item.Linux Browser": [],
                 "libobs.show_scene_item.Main Screen": [],
-                "libobs.show_scene_item.SocialHandles2": [],
+                "libobs.show_scene_item.VLC Video Source": [],
                 "libobs.show_scene_item.WebcamGroup": []
             },
             "id": "scene",
@@ -1267,7 +1226,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Main",
-            "prev_ver": 419430406,
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -1275,7 +1234,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 31,
+                "id_counter": 41,
                 "items": [
                     {
                         "align": 5,
@@ -1348,18 +1307,18 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": true,
-                        "id": 25,
+                        "id": 32,
                         "locked": true,
-                        "name": "FaceCam",
+                        "name": "Facecam",
                         "pos": {
-                            "x": 1375.0,
-                            "y": 49.0
+                            "x": 1374.7530517578125,
+                            "y": 49.015010833740234
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 0.27135416865348816,
-                            "y": 0.27129629254341125
+                            "x": 0.27071088552474976,
+                            "y": 0.27025356888771057
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -1381,8 +1340,8 @@
                         "locked": true,
                         "name": "WebcamBorder",
                         "pos": {
-                            "x": 1372.2147216796875,
-                            "y": 44.0
+                            "x": 1372.21484375,
+                            "y": 43.999996185302734
                         },
                         "private_settings": {},
                         "rot": 0.0,
@@ -1410,8 +1369,8 @@
                         "locked": true,
                         "name": "WebcamGroup",
                         "pos": {
-                            "x": 1372.2147216796875,
-                            "y": 44.0
+                            "x": 1372.21484375,
+                            "y": 43.999996185302734
                         },
                         "private_settings": {
                             "collapsed": false
@@ -1437,43 +1396,16 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 28,
+                        "id": 31,
                         "locked": true,
-                        "name": "SocialHandles2",
-                        "pos": {
-                            "x": 1120.0,
-                            "y": 830.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": true,
-                        "id": 29,
-                        "locked": true,
-                        "name": "FollowAlert",
+                        "name": "Alerts",
                         "pos": {
                             "x": -220.0,
-                            "y": 680.0
+                            "y": 0.0
                         },
-                        "private_settings": {},
+                        "private_settings": {
+                            "collapsed": false
+                        },
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
@@ -1494,12 +1426,12 @@
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
-                        "group_item_backup": true,
-                        "id": 30,
-                        "locked": true,
-                        "name": "SubAlert",
+                        "group_item_backup": false,
+                        "id": 40,
+                        "locked": false,
+                        "name": "Linux Browser",
                         "pos": {
-                            "x": 362.0,
+                            "x": 0.0,
                             "y": 0.0
                         },
                         "private_settings": {},
@@ -1524,12 +1456,12 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 31,
-                        "locked": true,
-                        "name": "Alerts",
+                        "id": 41,
+                        "locked": false,
+                        "name": "VLC Video Source",
                         "pos": {
-                            "x": -220.0,
-                            "y": 0.0
+                            "x": 0.0,
+                            "y": 82.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
@@ -1558,7 +1490,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "StartingSoonText",
-            "prev_ver": 419430406,
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -1591,7 +1523,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "AFKText",
-            "prev_ver": 419430406,
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -1624,7 +1556,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "SmokingIsBad",
-            "prev_ver": 419430406,
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -1663,7 +1595,7 @@
                     "monitoring_type": 0,
                     "muted": false,
                     "name": "Blur",
-                    "prev_ver": 419430406,
+                    "prev_ver": 419430408,
                     "private_settings": {},
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -1691,7 +1623,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Main Screen",
-            "prev_ver": 419430406,
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -1714,14 +1646,14 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "StartingSoonCoffeeGirl",
-            "prev_ver": 419430406,
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "file": "/home/itsonlycole/ContentCreation/04.Resources/00.DesignIterations/200411_AnimeMinimal/StreamGraphics/CoffeeGirl.png"
+                "file": "/home/itsonlycole/ContentCreation/Resources/DesignIterations/200411_AnimeMinimal/StreamGraphics/CoffeeGirl.png"
             },
             "sync": 0,
             "versioned_id": "image_source",
@@ -1738,8 +1670,8 @@
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "FaceCam",
-            "prev_ver": 419430406,
+            "name": "Facecam",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -1750,10 +1682,11 @@
                 "Power Line Frequency": 7234307546238118212,
                 "White Balance Temperature": 3100,
                 "White Balance Temperature, Auto": false,
+                "buffering": false,
                 "device_id": "/dev/video2",
+                "framerate": 65596,
                 "input": 0,
-                "pixelformat": 842094169,
-                "resolution": 125830200
+                "pixelformat": 842094169
             },
             "sync": 0,
             "versioned_id": "v4l2_input",
@@ -1765,31 +1698,55 @@
             "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
-            "hotkeys": {
-                "libobs.mute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "libobs.unmute": []
-            },
-            "id": "browser_source",
-            "mixers": 255,
+            "hotkeys": {},
+            "id": "spectralizer",
+            "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "SocialHandles2",
-            "prev_ver": 419430406,
+            "name": "StartingSoonVisualizer",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "height": 250,
-                "is_local_file": true,
-                "local_file": "/home/itsonlycole/ContentCreation/04.Resources/00.DesignIterations/200411_AnimeMinimal/Social Media Popup by Nerd or Die/Popup Files/_right-social-media-popup-v2.html",
-                "restart_when_active": true
+                "audio_source": "Game",
+                "bar_space": 5,
+                "height": 164,
+                "width": 29
             },
             "sync": 0,
-            "versioned_id": "browser_source",
+            "versioned_id": "spectralizer",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "spectralizer",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "AFKVisualizer",
+            "prev_ver": 419430408,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "audio_source": "Game",
+                "bar_space": 5,
+                "gravity": 0.81999999999999995,
+                "height": 174,
+                "width": 38
+            },
+            "sync": 0,
+            "versioned_id": "spectralizer",
             "volume": 1.0
         },
         {
@@ -1799,64 +1756,40 @@
             "enabled": true,
             "flags": 0,
             "hotkeys": {
-                "libobs.mute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "libobs.unmute": []
+                "linuxbrowser.reloadpage": []
             },
-            "id": "browser_source",
-            "mixers": 255,
+            "id": "linuxbrowser-source",
+            "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "FollowAlert",
-            "prev_ver": 419430406,
+            "name": "Linux Browser",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "height": 400,
-                "url": "https://streamlabs.com/alert-box/v3/58E04B0EFFD7C656A59D?follows=1&resubs=0&facemaskdonations=1&sponsored_campaign=1",
-                "width": 1000
+                "height": 1080,
+                "hide_scrollbars": true,
+                "reload_on_scene": true,
+                "url": "https://streamelements.com/overlay/5ec47511ba8f0c5db916ff2f/54C09-JPSVkBgTTPj7hSfmUiXDkm_R5jRn2A_ibJPPaFIsuc",
+                "width": 1920
             },
             "sync": 0,
-            "versioned_id": "browser_source",
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "libobs.mute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "libobs.unmute": []
-            },
-            "id": "browser_source",
-            "mixers": 255,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "SubAlert",
-            "prev_ver": 419430406,
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "height": 450,
-                "url": "https://streamlabs.com/alert-box/v3/58E04B0EFFD7C656A59D?subscriptions=1&resubs=1&facemaskdonations=1&sponsored_campaign=1\n",
-                "width": 800
-            },
-            "sync": 0,
-            "versioned_id": "browser_source",
+            "versioned_id": "linuxbrowser-source",
             "volume": 1.0
         }
     ],
     "transition_duration": 300,
-    "transitions": []
+    "transitions": [
+        {
+            "id": "obs_stinger_transition",
+            "name": "Woosh",
+            "settings": {
+                "path": "/home/itsonlycole/ContentCreation/Resources/GraphicResources/Transistions/Woosh-Transition.webm",
+                "transition_point": 500
+            }
+        }
+    ]
 }
