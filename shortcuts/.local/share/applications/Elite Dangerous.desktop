@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=Elite Dangerous
-Comment=Play this game on Steam
-Exec=steam steam://rungameid/359320
-Icon=steam_icon_359320
-Terminal=false
-Type=Application
-Categories=Game;

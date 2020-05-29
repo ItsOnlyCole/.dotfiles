@@ -1,7 +1,0 @@
-
-[Desktop Entry]
-Type=Application
-Name=osu!
-Icon=lutris_osu
-Exec=lutris lutris:rungameid/2
-Categories=Game
