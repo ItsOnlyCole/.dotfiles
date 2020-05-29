@@ -1,7 +1,0 @@
-[Desktop Entry]
-Name=Game 478576776990425110
-Exec=/usr/bin/parsecd %u
-Type=Application
-NoDisplay=true
-Categories=Discord;Games;
-MimeType=x-scheme-handler/discord-478576776990425110;
