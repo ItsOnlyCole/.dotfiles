@@ -63,5 +63,9 @@
    <Source>Mixer Master:capture_2</Source>
    <Target>SteelSeries Out:playback_2</Target>
   </Connection>
+  <Connection>
+   <Source>SteelSeries Mic:capture_1</Source>
+   <Target>micCap:mono</Target>
+  </Connection>
  </ExternalPatchbay>
 </CARLA-PROJECT>
