@@ -21,6 +21,8 @@ fi
 #  Shutdown  #
 #  Scripts   #
 ##############
+#Copies a blank copy of playback.json for Google Play Music
+cp /home/itsonlycole/.config/Google\ Play\ Music\ Desktop\ Player/json_store/freshBoot.json /home/itsonlycole/.config/Google\ Play\ Music\ Desktop\ Player/json_store/playback.json
 # Push all Org Note Commits
 bash /home/itsonlycole/.config/scripts/gitAutoPush.sh /home/itsonlycole/Notes
 
