@@ -16,7 +16,9 @@ unloadDevice () {
   echo "Unloaded Device"
 }
 
-
+jack_control start
+pulseaudio --start
+sleep 5
 killall -9 jackdbus
 killall -9 pulseaudio
 killall -9 carla
