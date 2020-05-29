@@ -25,7 +25,7 @@ set $mod Mod4
 new_window pixel 0
 new_float pixel 0
 hide_edge_borders none
-border_radius 8 # For Rounded Corners
+# border_radius 8 # For Rounded Corners
 
 # Use Mouse+$mod to drag floating windows
 floating_modifier $mod
