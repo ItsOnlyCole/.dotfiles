@@ -51,7 +51,8 @@ c.input.insert_mode.auto_load = True
 c.tabs.position = 'top'
 c.tabs.show = 'switching'
 c.tabs.show_switching_delay = 3000
-
+#Sets the start page to be unraid Dashboard
+c.url.start_pages = "http://192.168.1.97/Dashboard"
 # Enable JavaScript.
 # Type: Bool
 config.set('content.javascript.enabled', True, 'file://*')
