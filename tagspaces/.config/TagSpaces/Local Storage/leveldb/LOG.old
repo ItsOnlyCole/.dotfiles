@@ -1,9 +1,3 @@
-2020/05/11-18:07:19.886 fca84 Reusing MANIFEST leveldb/MANIFEST-000001
-2020/05/11-18:07:19.887 fca84 Recovering log #34
-2020/05/11-18:07:19.887 fca84 Reusing old log leveldb/000034.log 
-2020/05/11-18:08:19.888 fcb58 Level-0 table #37: started
-2020/05/11-18:08:19.892 fcb58 Level-0 table #37: 18015 bytes OK
-2020/05/11-18:08:19.895 fcb58 Delete type=0 #34
-2020/05/11-18:10:19.889 fcb58 Level-0 table #39: started
-2020/05/11-18:10:19.891 fcb58 Level-0 table #39: 18583 bytes OK
-2020/05/11-18:10:19.894 fcb58 Delete type=0 #36
+2020/05/27-09:13:56.442 264a6b Reusing MANIFEST leveldb/MANIFEST-000001
+2020/05/27-09:13:56.442 264a6b Recovering log #38
+2020/05/27-09:13:56.443 264a6b Reusing old log leveldb/000038.log 
