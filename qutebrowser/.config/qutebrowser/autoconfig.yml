@@ -19,6 +19,8 @@ settings:
     https://filmora.wondershare.com: false
     https://ibb.co: false
     https://meet.google.com: false
+    https://metathreads.com: false
+    https://myquiz.org: false
     https://www.cgtrader.com: false
     https://www.facebook.com: false
     https://www.faceit.com: true
@@ -29,5 +31,11 @@ settings:
     https://www.youtube.com: false
   content.register_protocol_handler:
     https://mail.google.com?extsrc=mailto&url=%25s: true
+  fonts.statusbar:
+    global: default_size default_family
+  fonts.tabs:
+    global: default_size default_family
+  fonts.web.size.default:
+    global: 16
   qt.highdpi:
     global: true
