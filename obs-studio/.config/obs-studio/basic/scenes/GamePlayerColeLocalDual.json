@@ -171,7 +171,7 @@
         "push-to-talk": false,
         "push-to-talk-delay": 0,
         "settings": {
-            "device_id": "alsa_output.pci-0000_23_00.1.hdmi-stereo-extra2.monitor"
+            "device_id": "alsa_output.pci-0000_2d_00.1.hdmi-stereo.monitor"
         },
         "sync": 0,
         "versioned_id": "pulse_output_capture",
@@ -249,7 +249,7 @@
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Facecam",
+            "name": "CaptureCard",
             "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
@@ -259,10 +259,9 @@
             "settings": {
                 "Exposure, Auto": 5557561106012987725,
                 "Power Line Frequency": 7234307546238118212,
-                "White Balance Temperature": 3100,
                 "buffering": false,
-                "device_id": "/dev/video2",
-                "framerate": -1,
+                "device_id": "/dev/video0",
+                "framerate": 65596,
                 "input": 0,
                 "pixelformat": 842094169,
                 "resolution": 125830200
@@ -278,11 +277,11 @@
             "enabled": true,
             "flags": 0,
             "hotkeys": {},
-            "id": "v4l2_input",
+            "id": "obs-stream-effects-filter-blur",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "CaptureCard",
+            "name": "Blur",
             "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
@@ -290,138 +289,17 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "Exposure, Auto": 5557561106012987725,
-                "Power Line Frequency": 7234307546238118212,
-                "device_id": "/dev/video4",
-                "input": 0,
-                "pixelformat": 842094169,
-                "resolution": 125830200
+                "Commit": "771f4138",
+                "Filter.Blur.Size": 43.0,
+                "Filter.Blur.StepScale": true,
+                "Filter.Blur.StepScale.X": 0.01,
+                "Filter.Blur.StepScale.Y": 0.01,
+                "Filter.Blur.SubType": "area",
+                "Filter.Blur.Type": "box",
+                "Version": 34359738368
             },
             "sync": 0,
-            "versioned_id": "v4l2_input",
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.CaptureCard": [],
-                "libobs.hide_scene_item.Facecam": [],
-                "libobs.hide_scene_item.Main Screen": [],
-                "libobs.show_scene_item.CaptureCard": [],
-                "libobs.show_scene_item.Facecam": [],
-                "libobs.show_scene_item.Main Screen": []
-            },
-            "id": "scene",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Main",
-            "prev_ver": 419430408,
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "custom_size": false,
-                "id_counter": 28,
-                "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 12,
-                        "locked": true,
-                        "name": "CaptureCard",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": false
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 11,
-                        "locked": true,
-                        "name": "Main Screen",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 28,
-                        "locked": false,
-                        "name": "Facecam",
-                        "pos": {
-                            "x": 1920.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0010416507720947,
-                            "y": 1.0009258985519409
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    }
-                ]
-            },
-            "sync": 0,
-            "versioned_id": "scene",
+            "versioned_id": "obs-stream-effects-filter-blur",
             "volume": 1.0
         },
         {
@@ -479,6 +357,162 @@
             "settings": {},
             "sync": 0,
             "versioned_id": "xshm_input",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": [],
+                "libobs.hide_scene_item.CaptureCard": [],
+                "libobs.hide_scene_item.Facecam": [],
+                "libobs.hide_scene_item.Main Screen": [],
+                "libobs.show_scene_item.CaptureCard": [],
+                "libobs.show_scene_item.Facecam": [],
+                "libobs.show_scene_item.Main Screen": []
+            },
+            "id": "scene",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Main",
+            "prev_ver": 419430408,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "custom_size": false,
+                "id_counter": 29,
+                "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 11,
+                        "locked": true,
+                        "name": "Main Screen",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 29,
+                        "locked": true,
+                        "name": "CaptureCard",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": false
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 28,
+                        "locked": false,
+                        "name": "Facecam",
+                        "pos": {
+                            "x": 267.0,
+                            "y": 93.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0010416507720947,
+                            "y": 1.0009258985519409
+                        },
+                        "scale_filter": "disable",
+                        "visible": false
+                    }
+                ]
+            },
+            "sync": 0,
+            "versioned_id": "scene",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "v4l2_input",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Facecam",
+            "prev_ver": 419430408,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "Exposure, Auto": 5557561106012987725,
+                "Power Line Frequency": 7234307546238118212,
+                "White Balance Temperature": 3100,
+                "buffering": false,
+                "device_id": "/dev/video2",
+                "framerate": -1,
+                "input": 0,
+                "pixelformat": 842094169,
+                "resolution": 125830200
+            },
+            "sync": 0,
+            "versioned_id": "v4l2_input",
             "volume": 1.0
         }
     ],

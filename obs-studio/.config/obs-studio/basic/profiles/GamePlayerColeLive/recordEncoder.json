@@ -1,5 +1,5 @@
 {
     "bitrate": 12000,
-    "gpu": 1,
+    "gpu": 0,
     "rate_control": "CBR"
 }
