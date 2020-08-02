@@ -1,6 +1,0 @@
-{
-    "bitrate": 2500,
-    "gpu": 0,
-    "preset": "hq",
-    "rate_control": "VBR"
-}

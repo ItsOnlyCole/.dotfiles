@@ -1,5 +1,0 @@
-{
-    "bitrate": 3000,
-    "gpu": 1,
-    "rate_control": "VBR"
-}

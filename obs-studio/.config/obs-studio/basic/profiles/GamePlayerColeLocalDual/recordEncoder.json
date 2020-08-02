@@ -1,5 +1,0 @@
-{
-    "bitrate": 4000,
-    "preset": "faster",
-    "rate_control": "VBR"
-}

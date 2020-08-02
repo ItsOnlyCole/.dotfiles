@@ -1,9 +1,0 @@
-{
-    "settings": {
-        "bwtest": false,
-        "key": "90a4f08d-9d10-4096-9fc9-40d17c716d16",
-        "server": "rtmp://ingest.redd.it/inbound/",
-        "use_auth": false
-    },
-    "type": "rtmp_custom"
-}
