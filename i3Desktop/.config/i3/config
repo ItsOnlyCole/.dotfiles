@@ -123,7 +123,7 @@ exec_always --no-startup-id bash ~/.config/polybar/scripts/launchPolybar.sh
 # Starts Audio Config
 #exec --no-startup-id bash ~/.config/scripts/configureAudio.sh
 # Activates Numlock
-#exec --no-startup-id numlockx &
+exec --no-startup-id numlockx &
 # Auto Pulls Org Notes From Remote Repo
 #exec --no-startup-id bash ~/.config/scripts/gitAutoPull.sh ~/Notes &
 
