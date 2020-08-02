@@ -15,22 +15,22 @@
 
 [settings]
   screenchange-reload = true
-  font-0 = Overpass Bold:pixelsize=11;2.25
+  font-0 = Overpass:syle=Bold:pixelsize=12;2.25
   font-1 = FontAwesome:pixelsize=12;1
   font-2 = Font Awesome 5 Free:style=Regular:pixelsize=12;1
   font-3 = Font Awesome 5 Free:style=Solid:pixelsize=12;1
-  font-4 = Font Awesome 5 Brands:pixelsize=8;1
+  font-4 = Font Awesome 5 Brands:pixelsize=12;1
   barGap = 10
   ;radius = 8
   barWidth = 100%
-  barHeight = 30
+  barHeight = 40
   monitor = DP-2
   pseudo-transparency = false
 
 [bar/main]
   monitor = ${settings.monitor}
   fixed-center = true
-  dpi = 135
+  dpi = 115
   bottom = false
   width = ${settings.barWidth}
   height = ${settings.barHeight}
