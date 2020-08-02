@@ -117,7 +117,7 @@ mode "resize" {
 # Network Manager for Laptop
 #exec nm-applet &
 # Starts Polybar
-#exec_always --no-startup-id bash ~/.config/polybar/scripts/launchPolybar.sh
+exec_always --no-startup-id bash ~/.config/polybar/scripts/launchPolybar.sh
 # Runs Polkit
 #exec --no-startup-id /usr/lib/xfce-polkit/xfce-polkit &
 # Starts Audio Config
@@ -126,8 +126,6 @@ mode "resize" {
 #exec --no-startup-id numlockx &
 # Auto Pulls Org Notes From Remote Repo
 #exec --no-startup-id bash ~/.config/scripts/gitAutoPull.sh ~/Notes &
-# Rebinds keys on tartarusv2
-#exec --no-startup-id xkbcomp -i 15 ~/.config/xkbConfigs/tartarusV2.xkb $DISPLAY
 
 #################
 # App Shortcuts #

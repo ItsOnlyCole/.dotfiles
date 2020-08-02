@@ -28,7 +28,7 @@
   pseudo-transparency = false
 
 [bar/main]
-  monitor = ${settings.monitor}
+  ;monitor = ${settings.monitor}
   fixed-center = true
   dpi = 95
   bottom = false
@@ -60,7 +60,7 @@
   #tray-position Set right for laptop and none for desktop
   tray-position = none
   modules-left = startMenu i3
-  modules-center = googleMusic
+  modules-center =
   modules-right = date notifications
 
 ;---------------------;
