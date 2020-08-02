@@ -159,7 +159,7 @@ alias reboot='bash ~/.config/scripts/shutdown.sh true'
 #alias convertToWebm='bash ~/.config/scripts/convertToWebm.sh'
 
 #Sets color scheme
-#cat ~/.cache/wal/sequences &
+cat ~/.cache/wal/sequences &
 
 # Runs with Bash Command
 neofetch
