@@ -28,9 +28,9 @@
   pseudo-transparency = false
 
 [bar/main]
-  ;monitor = ${settings.monitor}
+  monitor = ${settings.monitor}
   fixed-center = true
-  dpi = 95
+  dpi = 135
   bottom = false
   width = ${settings.barWidth}
   height = ${settings.barHeight}

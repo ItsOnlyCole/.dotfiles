@@ -111,7 +111,7 @@ mode "resize" {
 # Autostart Apps #
 ##################
 
-#exec --no-startup-id bash .config/scripts/setupDesktop.sh
+exec --no-startup-id bash .config/scripts/setupDesktop.sh
 #Sets up Light Locker for locking the desktop
 #exec --no-startup-id light-locker &
 # Network Manager for Laptop
