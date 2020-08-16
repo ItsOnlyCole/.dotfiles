@@ -16,13 +16,20 @@ unloadDevice () {
   echo "Unloaded Device"
 }
 
+jack_control start
+pulseaudio --start
+sleep 5
 killall -9 jackdbus
 killall -9 pulseaudio
 killall -9 carla
-sleep 2
+#sleep 5
 jack_control start
 sleep 2
 pulseaudio --start
+sleep 1
+killall -9 pulsaudio
+pulseaudio --start
+sleep 5
 unloadDevice SteelSeries
 #unloadDevice USB_Sound_Device
 unloadDevice Burr
@@ -51,4 +58,3 @@ alsa_out -j "SteelSeries Out" -d hw:Wireless,1 -q 2 2> /dev/null 1> /dev/null &
 #pacmd load-module module-jack-sink channels=2 sink_name=media-out client_name=media-out connect=false
 sleep 2
 carla ~/.config/carla/mainConfig.carxp &
-pa-applet &

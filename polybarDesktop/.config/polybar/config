@@ -59,6 +59,48 @@
   module-margin-right = 2
   #tray-position Set right for laptop and none for desktop
   tray-position = none
+  tray-scale = 0.9
+  tray-maxsize = 25
+  tray-padding = 5
+  modules-left = startMenu i3
+  modules-center =
+  modules-right = date notifications
+
+[bar/mainALT]
+  monitor = ${settings.monitor}
+  fixed-center = true
+  dpi = 115
+  bottom = false
+  width = ${settings.barWidth}
+  height = ${settings.barHeight}
+  offset-x = 0
+  offset-y = 0
+  background = ${colors.transparent}
+  foreground = ${colors.white}
+  overline-size = 0
+  overline-color = #f00
+  underline-size = 2
+  underline-color = ${colors.white}
+  border-top-size = ${settings.barGap}
+  border-left-size = ${settings.barGap}
+  border-right-size = ${settings.barGap}
+  border-bottom-size = 0
+  border-color = ${colors.transparent}
+  spacing = 2
+  padding-left = 5
+  padding-right = 5
+  font-0 = ${settings.font-0}
+  font-1 = ${settings.font-1}
+  font-2 = ${settings.font-2}
+  font-3 = ${settings.font-3}
+  font-4 = ${settings.font-4}
+  module-margin-left = 2
+  module-margin-right = 2
+  #tray-position Set right for laptop and none for desktop
+  tray-position = right
+  tray-scale = 0.9
+  tray-maxsize = 25
+  tray-padding = 5
   modules-left = startMenu i3
   modules-center =
   modules-right = date notifications
@@ -80,6 +122,13 @@
   format-prefix-foreground = ${colors.white}
 
   label = %date%   %time%
+
+[module/enableTray]
+  type = custom/text
+  ;FontAwesome Circle-Notch f1ce
+  content = 
+  click-left = ~/.config/polybar/scripts/launchPolybar.sh mainAlt &
+  click-right = ~/.config/polybar/scripts/launchPolybar.sh &
 
 [module/i3]
   type = internal/i3
@@ -121,4 +170,4 @@
   type = custom/text
   interval = 1
   content = ""
-  click-left = rofi -show drun -themerofi -show drun -theme Arc-Dark
+  click-left = "jgmenu_run >/dev/null 2>&1 &"

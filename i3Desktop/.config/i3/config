@@ -111,17 +111,16 @@ mode "resize" {
 # Autostart Apps #
 ##################
 
+#Sets up monitors, wallpapers, compositor, audio, and opens Discord (Needs to run after Audio to work)
 exec --no-startup-id bash .config/scripts/setupDesktop.sh
 #Sets up Light Locker for locking the desktop
 exec --no-startup-id light-locker &
 # Network Manager for Laptop
-#exec nm-applet &
+exec nm-applet &
 # Starts Polybar
 exec_always --no-startup-id bash ~/.config/polybar/scripts/launchPolybar.sh
 # Runs Polkit
 exec --no-startup-id /usr/lib/xfce-polkit/xfce-polkit &
-# Starts Audio Config
-#exec --no-startup-id bash ~/.config/scripts/configureAudio.sh
 # Activates Numlock
 exec --no-startup-id numlockx &
 # Auto Pulls Org Notes From Remote Repo
@@ -132,7 +131,10 @@ exec --no-startup-id numlockx &
 #################
 
 bindsym $mod+Return exec st
-bindsym $mod+d exec --no-startup-id rofi -show drun -theme Arc-Dark
+bindsym $mod+d exec --no-startup-id ulauncher --no-window-shadow
+bindsym $mod+Shift+d exec --no-startup-id rofi -show drun -theme Arc-Dark -font "monospace 16"
+bindsym $mod+t exec --no-startup-id bash ~/.config/polybar/scripts/launchPolybar.sh mainAlt
+bindsym $mod+Shift+t exec --no-startup-id bash ~/.config/polybar/scripts/launchPolybar.sh
 # bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send 'brightness up'"
 # bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
 #bindsym $mod+Shift+Print exec --no-startup-id scrot -w ~/Pictures/Screenshots/%Y-%m-%d_%H:%M:%S.png
@@ -204,3 +206,4 @@ for_window [class="qt5ct"] floating enable sticky enable border normal
 for_window [title="sudo"] floating enable border normal
 for_window [class="cadence"] floating enable
 for_window [title="Steam Guard - Computer Authorization Required"] floating enable
+for_window [title="Ulauncher Preferences"] floating enable
