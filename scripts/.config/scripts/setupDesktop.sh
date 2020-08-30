@@ -3,5 +3,5 @@
 bash ~/.config/scripts/configureMonitors.sh
 nitrogen --restore &
 picom -Cb &
-#bash ~/.config/scripts/configureAudio.sh
-#discord &
+bash ~/.config/scripts/configureAudio.sh
+discord &

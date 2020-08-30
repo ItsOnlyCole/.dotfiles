@@ -17,55 +17,103 @@
  <ExternalPatchbay>
   <Connection>
    <Source>system:capture_1</Source>
-   <Target>micCap:mono</Target>
+   <Target>Non-Mixer (Main):Microphone/in-1</Target>
   </Connection>
   <Connection>
-   <Source>media:front-left</Source>
+   <Source>system:capture_2</Source>
+   <Target>Non-Mixer (Main):Microphone/in-2</Target>
+  </Connection>
+  <Connection>
+   <Source>Non-Mixer (Main):Media/out-1</Source>
+   <Target>Non-Mixer/Master:in-1</Target>
+  </Connection>
+  <Connection>
+   <Source>Non-Mixer (Main):Media/out-2</Source>
+   <Target>Non-Mixer/Master:in-2</Target>
+  </Connection>
+  <Connection>
+   <Source>Non-Mixer (Main):Games/out-1</Source>
+   <Target>Non-Mixer/Master:in-1</Target>
+  </Connection>
+  <Connection>
+   <Source>Non-Mixer (Main):Games/out-2</Source>
+   <Target>Non-Mixer/Master:in-2</Target>
+  </Connection>
+  <Connection>
+   <Source>Non-Mixer (Main):Voip/out-1</Source>
+   <Target>Non-Mixer/Master:in-1</Target>
+  </Connection>
+  <Connection>
+   <Source>Non-Mixer (Main):Voip/out-2</Source>
+   <Target>Non-Mixer/Master:in-2</Target>
+  </Connection>
+  <Connection>
+   <Source>Non-Mixer (Main):Microphone/out-1</Source>
+   <Target>micCap:front-left</Target>
+  </Connection>
+  <Connection>
+   <Source>Non-Mixer (Main):Microphone/out-1</Source>
+   <Target>Non-Mixer (Other):MicSend/in-1</Target>
+  </Connection>
+  <Connection>
+   <Source>Non-Mixer (Main):Microphone/out-2</Source>
+   <Target>micCap:front-right</Target>
+  </Connection>
+  <Connection>
+   <Source>Non-Mixer (Main):Microphone/out-2</Source>
+   <Target>Non-Mixer (Other):MicSend/in-2</Target>
+  </Connection>
+  <Connection>
+   <Source>Non-Mixer (Other):MicSend/out-1</Source>
+   <Target>Non-Mixer/Master:in-1</Target>
+  </Connection>
+  <Connection>
+   <Source>Non-Mixer (Other):MicSend/out-2</Source>
+   <Target>Non-Mixer/Master:in-2</Target>
+  </Connection>
+  <Connection>
+   <Source>Non-Mixer/Master:out-1</Source>
    <Target>system:playback_1</Target>
   </Connection>
   <Connection>
-   <Source>media:front-right</Source>
-   <Target>system:playback_2</Target>
-  </Connection>
-  <Connection>
-   <Source>SteelSeriesMic:mono</Source>
-   <Target>micCap:mono</Target>
-  </Connection>
-  <Connection>
-   <Source>voip:front-left</Source>
-   <Target>system:playback_3</Target>
-  </Connection>
-  <Connection>
-   <Source>voip:front-left</Source>
-   <Target>voipCap:front-left</Target>
-  </Connection>
-  <Connection>
-   <Source>voip:front-right</Source>
-   <Target>system:playback_4</Target>
-  </Connection>
-  <Connection>
-   <Source>voip:front-right</Source>
-   <Target>voipCap:front-right</Target>
-  </Connection>
-  <Connection>
-   <Source>Mixer Master:capture_1</Source>
+   <Source>Non-Mixer/Master:out-1</Source>
    <Target>masterCap:front-left</Target>
   </Connection>
   <Connection>
-   <Source>Mixer Master:capture_1</Source>
-   <Target>SteelSeries Out:playback_1</Target>
+   <Source>Non-Mixer/Master:out-2</Source>
+   <Target>system:playback_2</Target>
   </Connection>
   <Connection>
-   <Source>Mixer Master:capture_2</Source>
+   <Source>Non-Mixer/Master:out-2</Source>
    <Target>masterCap:front-right</Target>
   </Connection>
   <Connection>
-   <Source>Mixer Master:capture_2</Source>
-   <Target>SteelSeries Out:playback_2</Target>
+   <Source>voip:front-left</Source>
+   <Target>Non-Mixer (Main):Voip/in-1</Target>
   </Connection>
   <Connection>
-   <Source>SteelSeries Mic:capture_1</Source>
-   <Target>micCap:mono</Target>
+   <Source>voip:front-right</Source>
+   <Target>Non-Mixer (Main):Voip/in-2</Target>
+  </Connection>
+  <Connection>
+   <Source>media:front-left</Source>
+   <Target>Non-Mixer (Main):Media/in-1</Target>
+  </Connection>
+  <Connection>
+   <Source>media:front-right</Source>
+   <Target>Non-Mixer (Main):Media/in-2</Target>
+  </Connection>
+  <Connection>
+   <Source>game:front-left</Source>
+   <Target>Non-Mixer (Main):Games/in-1</Target>
+  </Connection>
+  <Connection>
+   <Source>game:front-right</Source>
+   <Target>Non-Mixer (Main):Games/in-2</Target>
+  </Connection>
+  <Connection>
+   <Source>a2j:nanoKONTROL2 [28] (capture): nanoKONTROL2 MIDI 1</Source>
+   <Target>a2j:mididings [130] (playback): in_1</Target>
   </Connection>
  </ExternalPatchbay>
 </CARLA-PROJECT>
