@@ -114,7 +114,7 @@ mode "resize" {
 #Sets up monitors, wallpapers, compositor, audio, and opens Discord (Needs to run after Audio to work)
 exec --no-startup-id bash .config/scripts/setupDesktop.sh
 #Sets up Light Locker for locking the desktop
-exec --no-startup-id light-locker &
+#exec --no-startup-id light-locker &
 # Network Manager for Laptop
 exec nm-applet &
 # Starts Polybar
@@ -196,6 +196,7 @@ bindsym $mod+Shift+0 move container to workspace $ws10; workspace $ws10
 
 # Open applications on specific workspaces
 assign [class="Carla"] $ws9
+assign [class="Non-Mixer"] $ws9
 assign [class="discord"] $ws3
 
 # Open specific applications in floating mode
