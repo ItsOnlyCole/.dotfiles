@@ -137,6 +137,9 @@ eval "`dircolors -b $DIR_COLORS`"
 #Custom Exports
 export EDITOR=vim
 export HISTCONTROL=ignoreboth
+#export JAVA_OPTS='-XX:+IgnoreUnrecognizedVMOptions --add-modules java.se.ee'
+export JAVA_HOME='/usr/lib/jvm/java-8-openjdk'
+export ANDROID_SDK_ROOT='/opt/android-sdk'
 
 # Custom Aliases
 alias cp='cp -i'
