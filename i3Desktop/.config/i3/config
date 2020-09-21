@@ -161,7 +161,7 @@ set $ws10 10
 
 # Assign certain Workspaces to specific Montiors
 workspace $ws2 output DP-2
-workspace $ws1 output HDMI-1
+workspace $ws1 output DP-4
 workspace $ws3 output DP-0
 workspace $ws9 output DP-0
 
