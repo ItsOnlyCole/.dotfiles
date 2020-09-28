@@ -1,7 +1,0 @@
-[Desktop Entry]
-
-Type=Application
-Name=Photon File Validator
-Comment=Resin Slicer Validation
-Exec=java -jar /home/itsonlycole/.local/share/appimages/PhotonFileValidator.jar
-Terminal=false
