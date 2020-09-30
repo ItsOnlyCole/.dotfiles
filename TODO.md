@@ -1,0 +1,162 @@
+# TODO
+
+### Arch Base
+- [x] Arch Install
+- [x] Wifi
+- [x] neovim BASE
+- [x] git
+- [x] git: SSH setup
+- [x] git: Clone/Clean .dotfiles Repo
+- [x] Yay
+- [x] custom boot loader
+- [x] bluetooth drivers
+### Hardware
+- [x] System 76 Drivers
+- [x] Battery: ACPI
+- [ ] TLP/Battery Saver
+- [x] Graphics Switching
+- [ ] Keyboard Backlighting (Color/brightness saving)
+- [ ] Fan Control
+- [ ] Close Lid: Suspend on Battery
+- [ ] FN Keys
+- [x] Nvidia Drivers
+- [ ] Tarturus Custom Keybinds
+### Windows Manager
+- [ ] Alacritty Base
+- [ ] Alacritty Config
+- [ ] Remove ST
+- [x] i3-gaps BASE
+- [ ] i3 Config
+- [ ] i3 modular config
+- [ ] App launcher (uLauncher, rofi, etc)
+- [ ] Custom Background (nitrogen or feh)
+- [ ] Picom
+- [ ] picom: shadows
+- [ ] picom: transparency
+- [ ] Pywal
+- [ ] GTK Themeing
+- [ ] Custom Cursor
+- [ ] Custom Icons
+- [ ] QT5 theming
+- [ ] PulseAudio
+- [ ] PAVU control
+- [ ] Firefox
+- [ ] atom
+- [ ] PCmanFM
+- [ ] PCmanFM: Networked Drivers
+- [ ] Xarchiver
+### Polybar
+- [ ] Polybar
+- [ ] startmenu (JGMenu)
+- [ ] i3-workspaces
+- [ ] spotify now playing
+- [ ] date
+- [ ] clickable calendar (on date)
+- [ ] time
+- [ ] battery indicatore
+- [ ] battery: percentage
+- [ ] Batter: Hover Time Till Dead (On Battery)
+- [ ] Battery: Hover Time Till Charged (On Charger)
+- [ ] Network
+- [ ] Network: Drop Down Network Select
+- [ ] Bluetooth Drop Down
+- [ ] Audio Slider
+- [ ] Audio Quick Select
+- [ ] Do Not Disturb Mode
+- [ ] Hideable System Tray
+- [ ] Different Bars for different Devices
+### Terminal
+- [ ] Neofetch
+- [ ] Neofetch Custom Icon
+- [ ] slim down .bashrc
+- [ ] custom commands
+### Notifs
+- [ ] Dunst Notifications
+- [ ] FN Keys: On screen notifs
+- [ ] Keyboard Backlighting brightness notif
+- [ ] screen shot taken/savelocation notif
+- [ ] printing file notif
+- [ ] Docking/Undocking notif
+- [ ] Bluetooth Device connected/disconnect notif
+### Display Manager
+- [ ] Display Manager
+- [ ] Clean Login Screen
+- [ ] Lock Screen (Better Lock Screen)
+- [ ] Screensaver / autolock
+- [ ] custom boot animation
+### Web
+- [ ] Firefox
+- [ ] Custom Homescreen
+- [ ] vim keybinds
+- [ ] custom theme
+- [ ] adblock
+- [ ] sync work&personal profiles
+- [ ] custom search options
+### Software
+- [ ] neovim
+	- [ ] Programming Languages
+		- [ ] Shell Script
+		- [ ] Markdown
+		- [ ] Web Development
+		- [ ] Flutter
+		- [ ] Python
+		- [ ] C
+		- [ ] C++
+	- [ ] Leader Menu
+	- [ ] Fuzzy Search
+	- [ ] Custom Keymappings
+	- [ ] NerdTree
+	- [ ] vim-polygot (Better Syntax Support)
+	- [ ] autopair
+	- [ ] coc
+	- [ ] status bar
+	- [ ] colorizer
+	- [ ] rainbow parentheses (Customize because black parentheses suck ass)
+- [ ] Python
+- [ ] Pip
+- [ ] Flutter
+- [ ] Android Studio for Flutter
+- [ ] Git Automated Commits
+### Additional Tools
+- [ ] Calendar
+- [ ] Keybinds viewer
+- [ ] Bluetooth: Auto Connect
+- [ ] Calculator
+- [ ] Video Editing (Premiere, Davinci Resolve, or Kden Live)
+- [ ] Spotify
+- [ ] Discord
+- [ ] Battlescribe
+- [ ] Gimp
+- [ ] Screenshots
+	- [ ] Gui
+	- [ ] Custom Hotkeys
+	- [ ] Organized Folder/Filename
+- [ ] Automated Backups
+- [ ] Gparted
+- [ ] htop
+	- [ ] gui
+- [ ] FN Keys
+- [ ] Viewnoir
+- [ ] VLC
+- [ ] Printing
+### Games
+- [ ] Steam
+	- [ ] Proton
+	- [ ] CSGO custom configs
+- [ ] Lutris
+	- [ ] WoW
+		- [ ] Addons
+	- [ ] GW2
+	- [ ] UltimaOnline
+	- [ ] Osu!
+- [ ] Osu!Lazer
+- [ ] Minecraft
+	- [ ] MultiMC
+- [ ] Parsec
+### Docking
+- [ ] Docking Support
+- [ ] Autoset Monitors
+- [ ] Autoset Wallpapers
+- [ ] Docking/undocking autoscripts
+	- [ ] connect specific bluetooth devices
+- [ ] Close lid doesn't suspend
