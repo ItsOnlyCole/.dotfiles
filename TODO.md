@@ -22,8 +22,8 @@
 - [x] Nvidia Drivers
 - [ ] Tarturus Custom Keybinds
 ### Windows Manager
-- [ ] Alacritty Base
-- [ ] Alacritty Config
+- [x] Alacritty Base
+- [x] Alacritty Config
 - [ ] Remove ST
 - [x] i3-gaps BASE
 - [ ] i3 Config

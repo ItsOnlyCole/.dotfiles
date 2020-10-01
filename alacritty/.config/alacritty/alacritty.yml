@@ -1,0 +1,60 @@
+# Colors are set with pywal and bashrc
+
+background_opacity: 0.8
+
+font:
+        # Font family
+        normal:
+                family: "Hack"
+                style: Regular
+        bold:
+                family: "Hack"
+                style: Bold
+        italic:
+                family: "Hack"
+                style: Italic
+        bold_italic:
+                family: "Hack"
+                style: Bold Italic
+
+        # Font Size
+        size: 15.0
+
+        offset:
+                x: 0
+                y: 0
+        glyph_offset:
+                x: 0
+                y: 0
+
+window:
+        padding:
+                x: 5
+                y: 5
+
+scrolling:
+        # Maximum number of lines in scrollback buffer.
+        # Specifying '0' will disable scrolling
+        history: 10000
+
+        # Number of lines the viewport will move with every scrolled
+        multipler: 10
+
+# If 'true', bold text is drawn using bright color variants
+draw_bold_text_with_bright_colors: true
+
+selection:
+        semantic_escape_chars: ',│`|:"'' ()[]{}<>'
+        save_to_clipboard: true
+
+live_config_reload: true
+
+key_bindings:
+  - { key: V, mods: Control|Shift, action: Paste }
+  - { key: C, mods: Control|Shift, action: Copy }
+  - { key: Key0, mods: Control, action: ResetFontSize }
+  - { key: Equals, mods: Control, action: IncreaseFontSize }
+  - { key: Add, mods: Control, action: IncreaseFontSize }
+  - { key: Subtract, mods: Control, action: DecreaseFontSize }
+  - { key: Minus, mods: Control, action: DecreaseFontSize }
+  - { key: N, mods: Control, action: SpawnNewInstance }
