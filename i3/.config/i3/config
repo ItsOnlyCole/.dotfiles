@@ -61,11 +61,7 @@ bindsym $mod+f fullscreen toggle
 bindsym $mod+Shift+space floating toggle
 
 # Restarts i3 (Use to reload config)
-bindsym $mod+Shift+r restart
-
-TODO TODO TODO TODO TODO
-# Restarts i3 (Use to reload config)
-bindsym $mod+Shift+R EXEC RESTART Scripts
+bindsym $mod+Shift+r exec --no-startup-id bash /home/itsonlycole/.config/i3/config.d/generatei3Config.sh
 
 # Lock Screen
 bindsym $mod+Ctrl+L exec --no-startup-id LOCKCOMMAND
@@ -121,7 +117,7 @@ exec --no-startup-id numlockx &
 # Terminal
 bindsym $mod+Return exec --no-startup-id alacritty
 # Application launcher
-TODO
+# TODO
 #################
 # Application   #
 #  Restrictions #

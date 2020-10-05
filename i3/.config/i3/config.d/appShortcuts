@@ -9,4 +9,4 @@
 # Terminal
 bindsym $mod+Return exec --no-startup-id alacritty
 # Application launcher
-TODO
+# TODO
