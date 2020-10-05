@@ -17,4 +17,4 @@ cat $configD/systemConfig $configD/autoStartApps $configD/appShortcuts $configD/
 echo "Generated i3 config"
 
 echo "Reloading i3"
-#i3-msg restart
+i3-msg restart

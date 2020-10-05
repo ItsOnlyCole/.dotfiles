@@ -51,8 +51,8 @@ bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Right move right
 
 # Split Orientation
-bindsym $mod+h split h;exec notify-send 'Tile Horizontally'
-bindsym $mod+v split v;exec notify-send 'Tile Vertically'
+bindsym $mod+Ctrl+h split h;exec notify-send 'Tile Horizontally'
+bindsym $mod+Ctrl+v split v;exec notify-send 'Tile Vertically'
 
 # Toggle Fullscreen
 bindsym $mod+f fullscreen toggle
