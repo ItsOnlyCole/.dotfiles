@@ -26,8 +26,8 @@
 - [x] Alacritty Config
 - [ ] Remove ST
 - [x] i3-gaps BASE
-- [ ] i3 Config
-- [ ] i3 modular config
+- [x] i3 Config
+- [x] i3 modular config
 - [ ] App launcher (uLauncher, rofi, etc)
 - [ ] Custom Background (nitrogen or feh)
 - [ ] Picom
