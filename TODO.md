@@ -66,7 +66,7 @@
 - [ ] Hideable System Tray
 - [ ] Different Bars for different Devices
 ### Terminal
-- [ ] Neofetch
+- [x] Neofetch
 - [ ] Neofetch Custom Icon
 - [x] slim down .bashrc
 - [x] custom commands
