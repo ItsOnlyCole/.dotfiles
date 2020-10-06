@@ -24,7 +24,7 @@
 ### Windows Manager
 - [x] Alacritty Base
 - [x] Alacritty Config
-- [ ] Remove ST
+- [x] Remove ST
 - [x] i3-gaps BASE
 - [x] i3 Config
 - [x] i3 modular config
@@ -68,8 +68,8 @@
 ### Terminal
 - [ ] Neofetch
 - [ ] Neofetch Custom Icon
-- [ ] slim down .bashrc
-- [ ] custom commands
+- [x] slim down .bashrc
+- [x] custom commands
 ### Notifs
 - [ ] Dunst Notifications
 - [ ] FN Keys: On screen notifs
