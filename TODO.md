@@ -30,9 +30,9 @@
 - [x] i3 modular config
 - [ ] App launcher (uLauncher, rofi, etc)
 - [ ] Custom Background (nitrogen or feh)
-- [ ] Picom
-- [ ] picom: shadows
-- [ ] picom: transparency
+- [x] Picom
+- [x] picom: shadows
+- [x] picom: transparency
 - [ ] Pywal
 - [ ] GTK Themeing
 - [ ] Custom Cursor
