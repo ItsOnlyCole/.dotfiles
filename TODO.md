@@ -40,11 +40,11 @@
 - [ ] QT5 theming
 - [ ] PulseAudio
 - [ ] PAVU control
-- [ ] Firefox
+- [x] Firefox
 - [ ] atom
-- [ ] PCmanFM
-- [ ] PCmanFM: Networked Drivers
-- [ ] Xarchiver
+- [x] PCmanFM
+- [x] PCmanFM: Networked Drivers
+- [x] Xarchiver
 ### Polybar
 - [ ] Polybar
 - [ ] startmenu (JGMenu)
@@ -93,7 +93,7 @@
 - [ ] sync work&personal profiles
 - [ ] custom search options
 ### Software
-- [ ] neovim
+- [x] neovim
 	- [ ] Programming Languages
 		- [ ] Shell Script
 		- [ ] Markdown
