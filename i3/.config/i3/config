@@ -117,7 +117,7 @@ exec --no-startup-id numlockx &
 # Terminal
 bindsym $mod+Return exec --no-startup-id alacritty
 # Application launcher
-# TODO
+bindsym $mod+d exec --no-startup-id rofi -show drun
 #################
 # Application   #
 #  Restrictions #
