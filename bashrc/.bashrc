@@ -111,13 +111,13 @@ alias greg="grep --color=auto"
 alias cp="cp -i"
 alias updateFonts="fc-cache -f -v"
 alias clearme="cd ~ && clear && bash"
-alias shutdown="bash ~/.config/scripts/shutdown.sh"
-alias reboot="bash ~/.config/scripts/shutdown.sh true"
+#alias shutdown="bash ~/.config/scripts/shutdown.sh"
+#alias reboot="bash ~/.config/scripts/shutdown.sh true"
 alias vim="nvim"
 alias vi="nvim"
 
 # Sets Color Scheme for Terminal
-cat ~/.cache/wal/sequences &
+# cat ~/.cache/wal/sequences &
 
 # Runs with Bash Command
 neofetch
