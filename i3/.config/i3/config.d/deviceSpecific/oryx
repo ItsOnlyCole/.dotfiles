@@ -1,3 +1,8 @@
 # Oryx Pro (Device Specific Configs)
 
+# Sets up Wallpaper
 exec --no-startup-id feh --bg-center ~/.local/share/wallpapers/zeroTwoEnding.jpg
+# Starts Compositor
+exec --no-startup-id picom -Cb &
+# Starts Pulseaudio
+exec --not-startup-id pulseaudio --start &
