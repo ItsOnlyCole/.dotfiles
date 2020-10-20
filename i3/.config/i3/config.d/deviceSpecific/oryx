@@ -1,0 +1,3 @@
+# Oryx Pro (Device Specific Configs)
+
+exec --no-startup-id feh --bg-center ~/.local/share/wallpapers/zeroTwoEnding.jpg

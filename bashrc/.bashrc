@@ -117,7 +117,7 @@ alias vim="nvim"
 alias vi="nvim"
 
 # Sets Color Scheme for Terminal
-# cat ~/.cache/wal/sequences &
+cat ~/.cache/wal/sequences &
 
 # Runs with Bash Command
 neofetch

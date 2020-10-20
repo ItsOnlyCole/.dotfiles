@@ -9,6 +9,8 @@ obs-studio/.config/obs-studio/plugins/*
 
 minecraft/.minecraft/*
 
+i3/.config/i3/config
+
 # Allow
 !minecraft/.minecraft/resourcespacks/
 !minecraft/.minecraft/saves/
