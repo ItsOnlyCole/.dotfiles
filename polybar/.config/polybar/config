@@ -22,6 +22,7 @@
 
 [settings]
   screenchange-reload = true
+  pseudo-transparency = true
   font-0 = Overpass:syle=Bold:pixelsize=12;2.25
   font-1 = FontAwesome:pixelsize=12;1
   font-2 = Font Awesome 5 Free:style=Regular:pixelsize=12;1
@@ -41,6 +42,8 @@
   background = ${colors.transparent}
   foreground = ${colors.white}
 
+  overline-size = 0
+  overline-color = {colors.white}
   underline-size = 2
   underline-color = ${colors.white}
 
