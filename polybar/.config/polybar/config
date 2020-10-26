@@ -66,6 +66,8 @@
   module-margin-left = 2
   module-margin-right = 2
 
+  wm-restack = i3
+
   tray-position = none
   tray-scale = 0.9
   tray-maxsize = 25
