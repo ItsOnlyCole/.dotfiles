@@ -29,19 +29,19 @@
 - [x] i3 Config
 - [x] i3 modular config
 - [ ] App launcher (uLauncher, rofi, etc)
-- [ ] Custom Background (nitrogen or feh)
+- [x] Custom Background (nitrogen or feh)
 - [x] Picom
 - [x] picom: shadows
 - [x] picom: transparency
-- [ ] Pywal
+- [x] Pywal
 - [ ] GTK Themeing
 - [ ] Custom Cursor
 - [ ] Custom Icons
 - [ ] QT5 theming
-- [ ] PulseAudio
-- [ ] PAVU control
+- [x] PulseAudio
+- [x] PAVU control
 - [x] Firefox
-- [ ] atom
+- [x] atom
 - [x] PCmanFM
 - [x] PCmanFM: Networked Drivers
 - [x] Xarchiver
@@ -123,8 +123,8 @@
 - [ ] Bluetooth: Auto Connect
 - [ ] Calculator
 - [ ] Video Editing (Premiere, Davinci Resolve, or Kden Live)
-- [ ] Spotify
-- [ ] Discord
+- [x] Spotify
+- [x] Discord
 - [ ] Battlescribe
 - [ ] Gimp
 - [ ] Screenshots
