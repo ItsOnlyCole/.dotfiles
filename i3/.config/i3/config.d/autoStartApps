@@ -10,3 +10,5 @@
 exec --no-startup-id /usr/lib/xfce-polkit/xfce-polkit &
 # numlock
 exec --no-startup-id numlockx &
+# Polybar
+exec_always --no-startup-id bash ~/.config/polybar/scripts/launchPolybar.sh

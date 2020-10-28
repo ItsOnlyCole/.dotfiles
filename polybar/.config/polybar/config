@@ -22,7 +22,7 @@
 
 [settings]
   screenchange-reload = true
-  pseudo-transparency = true
+  pseudo-transparency = false
   font-0 = Overpass:syle=Bold:pixelsize=12;2.25
   font-1 = FontAwesome:pixelsize=12;1
   font-2 = Font Awesome 5 Free:style=Regular:pixelsize=12;1
@@ -43,14 +43,14 @@
   foreground = ${colors.white}
 
   overline-size = 0
-  overline-color = {colors.white}
+  overline-color = #f00
   underline-size = 2
   underline-color = ${colors.white}
 
   border-top-size = 10
   border-left-size = 10
   border-right-size = 10
-  border-down-size = 10
+  border-down-size = 0
   border-color = ${colors.transparent}
 
   spacing = 2
@@ -71,9 +71,9 @@
   tray-maxsize = 25
   tray-padding = 5
 
-  modules-left =
+  modules-left = startMenu i3
   modules-center =
-  modules-right =
+  modules-right = date notifications
 
 ;---------------------;
 ;       CUSTOM        ;
@@ -81,7 +81,7 @@
 ;---------------------;
 
 [bar/oryxMainBar]
-  inherit = bar/oryxMainBar
+  inherit = bar/barTemplate
   modules-left = startMenu i3
   modules-center =
   modules-right = date
