@@ -84,12 +84,41 @@
   inherit = bar/barTemplate
   modules-left = startMenu i3
   modules-center =
-  modules-right = date
+  modules-right = date battery
 
 
 ;---------------------;
 ;       MODULES       ;
 ;---------------------;
+
+[module/battery]
+  type = internal/battery
+  poll-interval = 5
+
+  full-at = 95
+  battery = BAT0
+  adapter = ADP1
+
+  format-charging = <animation-charging> <label-charging> %
+  label-charging = %percentage%
+  label-full = %percentage%
+
+  format-discharging = <ramp-capacity> <label-discharging> %
+  label-discharging = %percentage%
+
+  animation-charging-0 = 
+  animation-charging-1 = 
+  animation-charging-2 = 
+  animation-charging-3 = 
+  animation-charging-4 = 
+
+  ramp-capacity-0 = 
+  ramp-capacity-1 = 
+  ramp-capacity-2 = 
+  ramp-capacity-3 = 
+  ramp-capacity-4 = 
+
+  animation-charging-framerate = 750
 
 [module/date]
   type = internal/date
