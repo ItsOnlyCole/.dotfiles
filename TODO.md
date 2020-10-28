@@ -85,7 +85,7 @@
 - [ ] Screensaver / autolock
 - [ ] custom boot animation
 ### Web
-- [ ] Firefox
+- [x] Firefox
 - [ ] Custom Homescreen
 - [ ] vim keybinds
 - [ ] custom theme
@@ -125,19 +125,19 @@
 - [ ] Video Editing (Premiere, Davinci Resolve, or Kden Live)
 - [x] Spotify
 - [x] Discord
-- [ ] Battlescribe
+- [x] Battlescribe
 - [ ] Gimp
 - [ ] Screenshots
 	- [ ] Gui
 	- [ ] Custom Hotkeys
 	- [ ] Organized Folder/Filename
 - [ ] Automated Backups
-- [ ] Gparted
-- [ ] htop
+- [x] Gparted
+- [x] htop
 	- [ ] gui
 - [ ] FN Keys
-- [ ] Viewnoir
-- [ ] VLC
+- [x] Viewnoir
+- [x] VLC
 - [ ] Printing
 ### Games
 - [ ] Steam
