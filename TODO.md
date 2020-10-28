@@ -46,14 +46,14 @@
 - [x] PCmanFM: Networked Drivers
 - [x] Xarchiver
 ### Polybar
-- [ ] Polybar
-- [ ] startmenu (JGMenu)
-- [ ] i3-workspaces
+- [x] Polybar
+- [x] startmenu (JGMenu)
+- [x] i3-workspaces
 - [ ] spotify now playing
-- [ ] date
+- [x] date
 - [ ] clickable calendar (on date)
-- [ ] time
-- [ ] battery indicatore
+- [x] time
+- [ ] battery indicator
 - [ ] battery: percentage
 - [ ] Batter: Hover Time Till Dead (On Battery)
 - [ ] Battery: Hover Time Till Charged (On Charger)
@@ -64,7 +64,7 @@
 - [ ] Audio Quick Select
 - [ ] Do Not Disturb Mode
 - [ ] Hideable System Tray
-- [ ] Different Bars for different Devices
+- [x] Different Bars for different Devices
 ### Terminal
 - [x] Neofetch
 - [ ] Neofetch Custom Icon
