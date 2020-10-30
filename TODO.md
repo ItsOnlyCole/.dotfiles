@@ -13,11 +13,11 @@
 ### Hardware
 - [x] System 76 Drivers
 - [x] Battery: ACPI
-- [ ] TLP/Battery Saver
+- [-] TLP/Battery Saver
 - [x] Graphics Switching
 - [ ] Keyboard Backlighting (Color/brightness saving)
 - [ ] Fan Control
-- [ ] Close Lid: Suspend on Battery
+- [?] Close Lid: Suspend on Battery
 - [ ] FN Keys
 - [x] Nvidia Drivers
 - [ ] Tarturus Custom Keybinds
@@ -28,7 +28,7 @@
 - [x] i3-gaps BASE
 - [x] i3 Config
 - [x] i3 modular config
-- [ ] App launcher (uLauncher, rofi, etc)
+- [x] App launcher (uLauncher, rofi, etc)
 - [x] Custom Background (nitrogen or feh)
 - [x] Picom
 - [x] picom: shadows
@@ -102,6 +102,9 @@
 		- [ ] Python
 		- [ ] C
 		- [ ] C++
+		- [ ] C#
+			- [ ] ASP.NET Core
+			- [ ] Razor WebPages
 	- [ ] Leader Menu
 	- [ ] Fuzzy Search
 	- [ ] Custom Keymappings
