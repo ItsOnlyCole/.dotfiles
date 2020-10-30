@@ -10,7 +10,7 @@ obs-studio/.config/obs-studio/plugins/*
 minecraft/.minecraft/*
 
 i3/.config/i3/config
-
+nvim/.config/nvim/autoload/plugged/*
 # Allow
 !minecraft/.minecraft/resourcespacks/
 !minecraft/.minecraft/saves/

@@ -110,7 +110,7 @@
 	- [ ] Custom Keymappings
 	- [ ] NerdTree
 	- [ ] vim-polygot (Better Syntax Support)
-	- [ ] autopair
+	- [x] autopair
 	- [ ] coc
 	- [ ] status bar
 	- [ ] colorizer
