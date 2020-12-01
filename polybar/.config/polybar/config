@@ -85,7 +85,7 @@
   modules-left = startMenu i3
   modules-center =
   modules-right = date battery
-
+  tray-position = right
 
 ;---------------------;
 ;       MODULES       ;

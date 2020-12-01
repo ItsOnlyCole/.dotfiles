@@ -5,4 +5,6 @@ exec --no-startup-id feh --bg-center ~/.local/share/wallpapers/zeroTwoEnding.jpg
 # Starts Compositor
 exec --no-startup-id picom -Cb &
 # Starts Pulseaudio
-exec --not-startup-id pulseaudio --start &
+exec --no-startup-id pulseaudio --start &
+# Starts NM-Applet
+exec --no-startup-id nm-applet &
