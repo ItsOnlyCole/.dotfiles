@@ -3,7 +3,7 @@
 # Sets up Wallpaper
 exec --no-startup-id feh --bg-center ~/.local/share/wallpapers/zeroTwoEnding.jpg
 # Starts Compositor
-exec --no-startup-id picom -Cb &
+exec --no-startup-id picom --config ~/.config/picom/picom.conf -Cb --experimental-backends &
 # Starts Pulseaudio
 exec --no-startup-id pulseaudio --start &
 # Starts NM-Applet

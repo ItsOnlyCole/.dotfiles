@@ -16,7 +16,7 @@ set $mod Mod4
 new_window pixel 0
 new_float pixel 0
 hide_edge_borders none
-border_radius 8 #For Rounded Corners (Needs i3-gaps rounded)
+#border_radius 8 #For Rounded Corners (Needs i3-gaps rounded)
 
 # Use Mouse Left Click + $mod to drag floating windows
 floating_modifier $mod
@@ -63,8 +63,11 @@ bindsym $mod+Shift+space floating toggle
 # Restarts i3 (Use to reload config)
 bindsym $mod+Shift+r exec --no-startup-id bash /home/itsonlycole/.config/i3/config.d/generatei3Config.sh
 
+# Logout
+bindsym $mod+Ctrl+e exec --no-startup-id i3-msg exit
+
 # Lock Screen
-bindsym $mod+Ctrl+L exec --no-startup-id LOCKCOMMAND
+#bindsym $mod+Ctrl+L exec --no-startup-id LOCKCOMMAND
 
 # Set inner/outer gaps
 gaps inner 10
