@@ -8,5 +8,5 @@ then
     xrandr --output eDP-1-1 --auto
 
     # Re-sets the wallpaper to fit the new screen
-    feh --bg-center ~/.local/share/wallpaper/zeroTwoEnding.jpg
+    feh --bg-center ~/.local/share/wallpapers/zeroTwoEnding.jpg
 fi
