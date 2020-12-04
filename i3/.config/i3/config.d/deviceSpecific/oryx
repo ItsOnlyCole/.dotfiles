@@ -1,7 +1,5 @@
 # Oryx Pro (Device Specific Configs)
 
-# Sets up Wallpaper
-exec --no-startup-id feh --bg-center ~/.local/share/wallpapers/zeroTwoEnding.jpg
 # Starts Compositor
 exec --no-startup-id picom --config ~/.config/picom/picom.conf -b --experimental-backends &
 # Starts Pulseaudio
@@ -9,7 +7,9 @@ exec --no-startup-id pulseaudio --start &
 # Starts NM-Applet
 exec --no-startup-id nm-applet &
 # Enable Laptop Screen if in Nvidia Only Graphics
-exec --no-startup-id bash ~/.config/scripts/accessLaptopScreenNvidiaOnly.sh &
+exec --no-startup-id bash ~/.config/scripts/accessLaptopScreenNvidiaOnly.sh
+# Sets Wallpaper
+exec --no-startup-id feh --bg-center ~/.local/share/wallpapers/zeroTwoEnding.jpg
 
 # Switch to alt bar for Polybar
 bindsym $mod+t exec --no-startup-id bash /home/itsonlycole/.config/polybar/scripts/launchPolybar.sh 1
