@@ -12,7 +12,10 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 case $HOSTNAME in
 	oryx)
 		case $arg in
-			*)
+            1)
+                polybar -r oryxMainBarAlt &
+                ;;
+            *)
 				polybar -r oryxMainBar &
 				;;
 		esac
