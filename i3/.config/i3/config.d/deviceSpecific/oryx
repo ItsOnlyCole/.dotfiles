@@ -8,3 +8,5 @@ exec --no-startup-id picom --config ~/.config/picom/picom.conf -b --experimental
 exec --no-startup-id pulseaudio --start &
 # Starts NM-Applet
 exec --no-startup-id nm-applet &
+# Enable Laptop Screen if in Nvidia Only Graphics
+exec --no-startup-id bash ~/.config/scripts/accessLaptopScreenNvidiaOnly.sh &
