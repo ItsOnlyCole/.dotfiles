@@ -87,7 +87,7 @@
   modules-right = date battery
   tray-position = none
   monitor = DP-0.3
-  monitor-fallback = eDP-1-1
+  monitor-fallback = eDP-1
 
 [bar/oryxMainBarAlt]
   inherit = bar/oryxMainBar
