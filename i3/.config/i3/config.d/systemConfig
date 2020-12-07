@@ -67,7 +67,7 @@ bindsym $mod+Shift+r exec --no-startup-id bash /home/itsonlycole/.config/i3/conf
 bindsym $mod+Ctrl+e exec --no-startup-id i3-msg exit
 
 # Lock Screen
-#bindsym $mod+Ctrl+L exec --no-startup-id LOCKCOMMAND
+bindsym $mod+Ctrl+l exec --no-startup-id /home/itsonlycole/.local/bin/betterlockscreen -l 
 
 # Set inner/outer gaps
 gaps inner 10
