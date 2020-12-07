@@ -6,9 +6,12 @@
 " ##### Vim files loaded before plugins #####
 source $HOME/.config/nvim/modules/vim-polyglot.vim
 
+
 " ##### Plugins.Vim #####
 " plugins.vim - vim-plug manager
 source $HOME/.config/nvim/plugins.vim
 
 
 " ##### Vim files loaded after plugins #####
+source $HOME/.config/nvim/general/settings.vim
+source $HOME/.config/nvim/modules/nerdTree.vim

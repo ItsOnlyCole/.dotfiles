@@ -15,7 +15,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 	
 	" Better Syntax Support
 	Plug 'sheerun/vim-polyglot'
-
+	" Nerdtree File Explorer
+	Plug 'scrooloose/nerdtree'
 
 call plug#end()
 
