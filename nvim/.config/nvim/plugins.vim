@@ -13,6 +13,8 @@ endif
 " Settings/keybinds for each plugin is in nvim/modules/
 call plug#begin('~/.config/nvim/autoload/plugged')
 	
+	" Better Syntax Support
+	Plug 'sheerun/vim-polyglot'
 
 
 call plug#end()
