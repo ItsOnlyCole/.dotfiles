@@ -1,0 +1,1 @@
+Toggle NerdTree: Ctrl B

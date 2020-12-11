@@ -17,6 +17,29 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 	Plug 'sheerun/vim-polyglot'
 	" Nerdtree File Explorer
 	Plug 'scrooloose/nerdtree'
+    " Nerdtree Icons
+    Plug 'ryanoasis/vim-devicons'
+	" Airline Status Bar
+    Plug 'vim-airline/vim-airline'
+    Plug 'vim-airline/vim-airline-themes'
+    " COC 'Intelisense'
+	Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    " Whichkey Popup Menu
+    Plug 'liuchengxu/vim-which-key'
+
+	" CoC Extensions
+	"Plug 'neoclide/coc-discord-rpc'
+	"Plug 'neoclide/coc-css'
+	"Plug 'neoclide/coc-flutter'
+	"Plug 'neoclide/coc-html'
+	"Plug 'neoclide/coc-json'
+	"Plug 'neoclide/coc-markdownlint'
+	"Plug 'neoclide/coc-omnisharp'
+	"Plug 'neoclide/coc-python'
+	"Plug 'neoclide/coc-sh'
+	"Plug 'neoclide/coc-spell-checker'
+	"Plug 'neoclide/coc-tsserver'
+	"Plug 'neoclide/coc-xml'
 
 call plug#end()
 

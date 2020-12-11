@@ -15,3 +15,6 @@ source $HOME/.config/nvim/plugins.vim
 " ##### Vim files loaded after plugins #####
 source $HOME/.config/nvim/general/settings.vim
 source $HOME/.config/nvim/modules/nerdTree.vim
+source $HOME/.config/nvim/modules/coc.vim
+source $HOME/.config/nvim/modules/airline.vim
+source $HOME/.config/nvim/modules/whichKey.vim
