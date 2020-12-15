@@ -8,4 +8,5 @@
 xrandr --output eDP-1-1 --auto --below DP-0.3 --output DP-0.3 --auto --primary --output DP-0.2 --auto --right-of DP-0.3
 # Set Wallpaper
 feh --bg-center ~/.local/share/wallpapers/zeroTwoEnding.jpg
-# Disable Suspend on Lid Closed
+# Reloads Polybar
+bash ~/.config/polybar/scripts/launchPolybar.sh
