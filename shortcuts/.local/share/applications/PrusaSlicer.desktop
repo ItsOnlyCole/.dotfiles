@@ -1,7 +1,0 @@
-[Desktop Entry]
-
-Type=Application
-Name=Prusa Slicer
-Comment=Slicer for Prusa 3d Printers
-Exec=/home/itsonlycole/.local/share/appimages/PrusaSlicer.appimage
-Terminal=false

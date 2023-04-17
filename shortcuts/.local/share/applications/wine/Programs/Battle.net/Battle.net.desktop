@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=Battle.net
-Exec=env WINEPREFIX="/home/itsonlycole/Games/world-of-warcraft" /home/ubuntu/buildbot/runners/wine/lutris-5.5-x86_64/bin/wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/itsonlycole/Games/world-of-warcraft/dosdevices/c:/ProgramData/Microsoft/Windows/Start\\ Menu/Programs/Battle.net/Battle.net.lnk
-Type=Application
-StartupNotify=true
-Path=/home/itsonlycole/Games/world-of-warcraft/dosdevices/c:/Program Files (x86)/Battle.net
-Icon=56B4_Battle.net Launcher.0
-StartupWMClass=battle.net launcher.exe
