@@ -27,10 +27,10 @@ bindsym $mod+Shift+q kill
 bindsym $mod+Ctrl+q --release exec --no-startup-id xkill
 
 # Change Focus (Mimic VIM)
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+j focus left
-bindsym $mod+; focus right
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+h focus left
+bindsym $mod+l focus right
 
 # Change Focus (Cusor Keys)
 bindsym $mod+Down focus down
@@ -39,10 +39,10 @@ bindsym $mod+Left focus left
 bindsym $mod+Right focus right
 
 # Move Focus Window (Mimic VIM)
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+; move right
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+l move right
 
 # Move Focus Window (Cusor Keys)
 bindsym $mod+Shift+Down move down
@@ -51,8 +51,8 @@ bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Right move right
 
 # Split Orientation
-bindsym $mod+h split h;exec notify-send 'Tile Horizontally'
-bindsym $mod+v split v;exec notify-send 'Tile Vertically'
+bindsym $mod+Ctrl+h split h;exec notify-send 'Tile Horizontally'
+bindsym $mod+Ctrl+v split v;exec notify-send 'Tile Vertically'
 
 # Toggle Fullscreen
 bindsym $mod+f fullscreen toggle
@@ -79,14 +79,14 @@ gaps outer 15
 # Resize window
 bindsym $mod+r mode "resize"
 mode "resize" {
-     # Left/J will shrink window's width
-     # Right/: will grow window's width
-     # Down/K will expand window's height
-     # Up/L will shrink window's height
-     bindsym j resize shrink width 5 px or 5 ppt
-     bindsym k resize grow height 5 px or 5 ppt
-     bindsym l resize shrink height 5 px or 5 ppt
-     bindsym ; resize grow width 5 px or 5 ppt
+     # Left/H will shrink window's width
+     # Right/L will grow window's width
+     # Down/J will expand window's height
+     # Up/K will shrink window's height
+     bindsym h resize shrink width 5 px or 5 ppt
+     bindsym j resize grow height 5 px or 5 ppt
+     bindsym k resize shrink height 5 px or 5 ppt
+     bindsym l resize grow width 5 px or 5 ppt
      # Same bindings but with arrow keys
      bindsym Left resize shrink width 5 px or 5 ppt
      bindsym Down resize grow height 5 px or 5 ppt
