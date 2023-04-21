@@ -1,6 +1,6 @@
 # Colors are set with pywal and bashrc
 
-background_opacity: 0.95
+window.opacity: 0.95
 
 font:
         # Font family
