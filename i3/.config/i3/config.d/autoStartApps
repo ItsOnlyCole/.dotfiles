@@ -1,0 +1,14 @@
+#-----------------------------
+# General Autostart Apps
+#
+# A collection of autostart
+# apps that are universal
+# between all my devices
+#-----------------------------
+
+# Polkit for running any non-terminal programs as admin
+#exec --no-startup-id /usr/lib/xfce-polkit/xfce-polkit &
+# numlock
+#exec --no-startup-id numlockx &
+# Polybar
+#exec_always --no-startup-id bash ~/.config/polybar/scripts/launchPolybar.sh

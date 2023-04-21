@@ -1,0 +1,12 @@
+#-----------------------------
+# General App Shortcuts
+#
+# A collection of app shorcuts
+# that are universal between
+# all my devices
+#-----------------------------
+
+# Terminal
+bindsym $mod+t exec --no-startup-id alacritty
+# Application launcher
+#bindsym $mod+d exec --no-startup-id rofi -show drun -theme ~/.config/rofi/themes/appLauncher_simplemenu.rasi
