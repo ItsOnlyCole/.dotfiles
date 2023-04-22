@@ -16,7 +16,7 @@ set $mod Mod4
 new_window pixel 0
 new_float pixel 0
 hide_edge_borders none
-#border_radius 8 #For Rounded Corners (Needs i3-gaps rounded)
+
 
 # Use Mouse Left Click + $mod to drag floating windows
 floating_modifier $mod
@@ -67,7 +67,7 @@ bindsym $mod+Shift+r exec --no-startup-id bash /home/itsonlycole/.config/i3/conf
 bindsym $mod+Ctrl+e exec --no-startup-id i3-msg exit
 
 # Lock Screen
-bindsym $mod+Ctrl+l exec --no-startup-id /home/itsonlycole/.local/bin/betterlockscreen -l 
+#bindsym $mod+Ctrl+l exec --no-startup-id /home/itsonlycole/.local/bin/betterlockscreen -l 
 
 # Set inner/outer gaps
 gaps inner 10
