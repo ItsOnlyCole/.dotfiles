@@ -19,7 +19,7 @@ hide_edge_borders none
 
 
 # Use Mouse Left Click + $mod to drag floating windows
-floating_modifier $mod
+floating_modifier Mod1
 
 # Kill Focused Window
 bindsym $mod+Shift+q kill
