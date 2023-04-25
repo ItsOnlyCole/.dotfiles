@@ -10,3 +10,5 @@
 bindsym $mod+t exec --no-startup-id alacritty
 # Application launcher
 bindsym $mod+d exec --no-startup-id rofi -show drun -theme ~/.config/rofi/themes/appLauncher_BannerCenter.rasi
+# Refreshes wallpapers
+bindsym $mod+Shift+w exec --no-startup-id bash ~/.config/scripts/setDesktopBackgrounds.sh
