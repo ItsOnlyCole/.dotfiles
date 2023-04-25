@@ -1,0 +1,5 @@
+#------------------
+# Device Specific
+#------------------
+# Configures monitor layout on login
+exec --no-startup-id bash ~/.config/scripts/configureMonitors.sh
