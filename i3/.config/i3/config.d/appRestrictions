@@ -13,6 +13,7 @@ for_window [class="cadence"] floating enable
 for_window [title="Steam Guard - Computer Authorization Required"] floating enable
 for_window [title="Ulauncher Preferences"] floating enable
 for_window [title="Bitwarden"] floating enabled
+for_window [title="Nextcloud"] floatin enabled
 # For popups
 #for_windows [window_role="pop-up"] floating enable
 #for_windows [window_role="task_dialog"] floating enable

@@ -14,3 +14,7 @@ exec --no-startup-id /usr/lib/xfce-polkit/xfce-polkit &
 exec_always --no-startup-id bash ~/.config/polybar/scripts/launchPolybar.sh
 # Picom Compositor
 exec --no-startup-id picom -b
+# Pulseaudio system tray
+exec --no-startup-id volctl &
+# Nextcloud
+exec --no-startup-id nextcloud &
