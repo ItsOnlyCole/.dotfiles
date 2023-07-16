@@ -1,35 +1,53 @@
 # Colors are set with pywal and bashrc
 
-window.opacity: 0.95
+window.opacity: 0.50
+env:
+  W3MIMGDISPLAY: /usr/lib/w3m/w3mimgdisplay
 
 colors:
-  # Follows Tokyo-Night Theme
+  # Follows Rose-Pine Theme
   # From https://github.com/alacritty/alacritty-theme
-        primary:
-          background: '#1a1b26'
-          foreground: '#a9b1d6'
-
-        # Normal colors
-        normal:
-          black:   '#32344a'
-          red:     '#f7768e'
-          green:   '#9ece6a'
-          yellow:  '#e0af68'
-          blue:    '#7aa2f7'
-          magenta: '#ad8ee6'
-          cyan:    '#449dab'
-          white:   '#787c99'
-
-        # Bright colors
-        bright:
-          black:   '#444b6a'
-          red:     '#ff7a93'
-          green:   '#b9f27c'
-          yellow:  '#ff9e64'
-          blue:    '#7da6ff'
-          magenta: '#bb9af7'
-          cyan:    '#0db9d7'
-          white:   '#acb0d0'
+  primary:
+    background: "0x191724"
+    foreground: "0xe0def4"
+  cursor:
+    text: "0xe0def4"
+    cursor: "0x524f67"
+  vi_mode_cursor:
+    text: "0xe0def4"
+    cursor: "0x524f67"
+  line_indicator:
+    foreground: None
+    background: None
+  selection:
+    text: "0xe0def4"
+    background: "0x403d52"
+  normal:
+    black: "0x26233a"
+    red: "0xeb6f92"
+    green: "0x31748f"
+    yellow: "0xf6c177"
+    blue: "0x9ccfd8"
+    magenta: "0xc4a7e7"
+    cyan: "0xebbcba"
+    white: "0xe0def4"
+  bright:
+    black: "0x6e6a86"
+    red: "0xeb6f92"
+    green: "0x31748f"
+    yellow: "0xf6c177"
+    blue: "0x9ccfd8"
+    magenta: "0xc4a7e7"
+    cyan: "0xebbcba"
+    white: "0xe0def4"
+  hints:
+    start:
+      foreground: "#908caa"
+      background: "#1f1d2e"
+    end:
+      foreground: "#6e6a86"
+      background: "#1f1d2e"
+  
 font:
         # Font family
         normal:
