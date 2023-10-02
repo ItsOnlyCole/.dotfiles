@@ -1,0 +1,8 @@
+#------------------
+# Device Specific
+#------------------
+# Configures monitor layout on login
+exec --no-startup-id bash ~/.config/scripts/configureMonitors.sh
+
+# Sets monitors' wallpapers
+exec --no-startup-id bash ~/.config/scripts/setDesktopBackgrounds.sh

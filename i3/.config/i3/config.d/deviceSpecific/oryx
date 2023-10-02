@@ -1,0 +1,27 @@
+# Oryx Pro (Device Specific Configs)
+
+# Starts Compositor
+exec --no-startup-id picom --config ~/.config/picom/picom.conf -b --experimental-backends &
+# Starts Pulseaudio
+exec --no-startup-id pulseaudio --start &
+# Starts NM-Applet
+exec --no-startup-id nm-applet &
+# Enable Laptop Screen if in Nvidia Only Graphics
+exec --no-startup-id bash ~/.config/scripts/accessLaptopScreenNvidiaOnly.sh
+# Sets Wallpaper
+exec --no-startup-id feh --bg-center ~/.local/share/wallpapers/zeroTwoEnding.jpg
+
+# Switch to alt bar for Polybar
+bindsym $mod+t exec --no-startup-id bash /home/itsonlycole/.config/polybar/scripts/launchPolybar.sh 1
+# Switch back to main bar for Polybar
+bindsym $mod+Shift+t exec --no-startup-id bash /home/itsonlycole/.config/polybar/scripts/launchPolybar.sh
+
+
+
+### Function Keys ###
+# Audio Mute (FN+F3)
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
+# Volume Down (FN+F5)
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -1000
+# Volume Up (FN F6)
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +1000
